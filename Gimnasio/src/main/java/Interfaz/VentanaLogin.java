@@ -158,11 +158,14 @@ public class VentanaLogin extends javax.swing.JFrame {
                         .addGroup(laminaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(separadorCorreo)
                             .addComponent(separadorContrasenna)
-                            .addComponent(campoContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(laminaLoginLayout.createSequentialGroup()
                                 .addComponent(imagenArroba)
-                                .addGap(18, 18, Short.MAX_VALUE)
-                                .addComponent(campoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(laminaLoginLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(laminaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(campoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(campoContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(37, 37, 37))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, laminaLoginLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -295,7 +298,6 @@ public class VentanaLogin extends javax.swing.JFrame {
         textoTipoCuenta1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         textoTipoCuenta1.setText("Apellidos:");
         laminaObjetosRegistrarse.add(textoTipoCuenta1);
-        textoTipoCuenta1.getAccessibleContext().setAccessibleName("Apellidos:");
 
         campoNombreUsuarioRegistro1.setBackground(new java.awt.Color(33, 45, 62));
         campoNombreUsuarioRegistro1.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N

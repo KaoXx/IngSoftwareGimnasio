@@ -67,11 +67,16 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="separadorCorreo" alignment="1" max="32767" attributes="0"/>
                               <Component id="separadorContrasenna" alignment="1" max="32767" attributes="0"/>
-                              <Component id="campoContrasenna" min="-2" pref="268" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="imagenArroba" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="32767" attributes="0"/>
-                                  <Component id="campoCorreo" min="-2" pref="268" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="campoCorreo" min="-2" pref="288" max="-2" attributes="0"/>
+                                      <Component id="campoContrasenna" min="-2" pref="292" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
@@ -234,7 +239,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="imagenLogo">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(Util_Interfaz.reescalarImagen(new ImageIcon(&quot;src/main/java/imagenes/logo.png&quot;)))"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(Util_Interfaz.reescalarImagen(new ImageIcon(&quot;src/main/java/imagenes/logo.png&quot;)));"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JPasswordField" name="campoContrasenna">
@@ -513,9 +518,6 @@
                     <Property name="horizontalAlignment" type="int" value="4"/>
                     <Property name="text" type="java.lang.String" value="Apellidos:"/>
                   </Properties>
-                  <AccessibilityProperties>
-                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Apellidos:"/>
-                  </AccessibilityProperties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="campoNombreUsuarioRegistro1">
                   <Properties>
