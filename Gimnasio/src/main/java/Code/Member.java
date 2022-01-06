@@ -6,16 +6,27 @@ import java.util.UUID;
 public class Member {
     UUID uuid;
     int memberNumber;
-    char name,tlfNumber,email,bankNumber,feeType;
+    String name,tlfNumber,email,bankNumber,feeType,password;
+    Trainer trainer;
 
-    public Member(UUID uuid, int memberNumber, char name, char tlfNumber, char email, char bankNumber, char feeType) {
-        this.uuid = UUID.randomUUID();
+    public Member(int memberNumber, String name, String tlfNumber, String  email,String password, String bankNumber, String feeType) {
+        uuid = UUID.randomUUID();
         this.memberNumber = memberNumber;
         this.name = name;
         this.tlfNumber = tlfNumber;
         this.email = email;
+        this.password = password;
         this.bankNumber = bankNumber;
         this.feeType = feeType;
+        trainer = null;
+    }
+
+    public Trainer getTrainer() {
+        return trainer;
+    }
+
+    public void setTrainer(Trainer trainer) {
+        this.trainer = trainer;
     }
 
     public UUID getUuid() {
@@ -34,57 +45,52 @@ public class Member {
         this.memberNumber = memberNumber;
     }
 
-    public char getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(char name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public char getTlfNumber() {
+    public String getTlfNumber() {
         return tlfNumber;
     }
 
-    public void setTlfNumber(char tlfNumber) {
+    public void setTlfNumber(String tlfNumber) {
         this.tlfNumber = tlfNumber;
     }
 
-    public char getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(char email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public char getBankNumber() {
+    public String getBankNumber() {
         return bankNumber;
     }
 
-    public void setBankNumber(char bankNumber) {
+    public void setBankNumber(String bankNumber) {
         this.bankNumber = bankNumber;
     }
 
-    public char getFeeType() {
+    public String getFeeType() {
         return feeType;
     }
 
-    public void setFeeType(char feeType) {
+    public void setFeeType(String feeType) {
         this.feeType = feeType;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Member)) return false;
-        Member member = (Member) o;
-        return getMemberNumber() == member.getMemberNumber() && getName() == member.getName() && getTlfNumber() == member.getTlfNumber() && getEmail() == member.getEmail() && getBankNumber() == member.getBankNumber() && getFeeType() == member.getFeeType() && Objects.equals(getUuid(), member.getUuid());
+    public String getPassword() {
+        return password;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getUuid(), getMemberNumber(), getName(), getTlfNumber(), getEmail(), getBankNumber(), getFeeType());
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -92,11 +98,27 @@ public class Member {
         return "Member{" +
                 "uuid=" + uuid +
                 ", memberNumber=" + memberNumber +
-                ", name=" + name +
-                ", tlfNumber=" + tlfNumber +
-                ", email=" + email +
-                ", bankNumber=" + bankNumber +
-                ", feeType=" + feeType +
+                ", name='" + name + '\'' +
+                ", tlfNumber='" + tlfNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", bankNumber='" + bankNumber + '\'' +
+                ", feeType='" + feeType + '\'' +
+                ", password='" + password + '\'' +
+                ", idtrainer=" + trainer.uid +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Member)) return false;
+        Member member = (Member) o;
+        return getMemberNumber() == member.getMemberNumber() && Objects.equals(getUuid(), member.getUuid()) && Objects.equals(getName(), member.getName()) && Objects.equals(getTlfNumber(), member.getTlfNumber()) && Objects.equals(getEmail(), member.getEmail()) && Objects.equals(getBankNumber(), member.getBankNumber()) && Objects.equals(getFeeType(), member.getFeeType()) && Objects.equals(getPassword(), member.getPassword());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getUuid(), getMemberNumber(), getName(), getTlfNumber(), getEmail(), getBankNumber(), getFeeType(), getPassword());
+    }
+
 }

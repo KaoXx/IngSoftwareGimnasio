@@ -1,34 +1,34 @@
 package Code;
 
-import java.time.LocalDate;
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
 public class Monitor extends Employee {
-    char [] Activities;
-    char Specialist;
+    Array Activities;
+    String Specialist;
 
-    public Monitor(UUID uid, char dni, char name, LocalDate bDayDate, float salary, int tlfNumber, char[] activities, char specialist) {
-        super(uid, dni, name, bDayDate, salary, tlfNumber);
+    public Monitor(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array activities, String specialist) {
+        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
         Activities = activities;
         Specialist = specialist;
     }
 
-    public char[] getActivities() {
+    public Array getActivities() {
         return Activities;
     }
 
-    public void setActivities(char[] activities) {
+    public void setActivities(Array activities) {
         Activities = activities;
     }
 
-    public char getSpecialist() {
+    public String  getSpecialist() {
         return Specialist;
     }
 
-    public void setSpecialist(char specialist) {
+    public void setSpecialist(String specialist) {
         Specialist = specialist;
     }
 
@@ -36,13 +36,15 @@ public class Monitor extends Employee {
     public String toString() {
         return "Monitor{" +
                 "uid=" + uid +
-                ", dni=" + dni +
-                ", name=" + name +
+                ", dni='" + dni + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 ", bDayDate=" + bDayDate +
                 ", salary=" + salary +
                 ", tlfNumber=" + tlfNumber +
-                ", Activities=" + Arrays.toString(Activities) +
-                ", Specialist=" + Specialist +
+                ", Activities=" + Activities +
+                ", Specialist='" + Specialist + '\'' +
                 '}';
     }
 
@@ -52,13 +54,11 @@ public class Monitor extends Employee {
         if (!(o instanceof Monitor)) return false;
         if (!super.equals(o)) return false;
         Monitor monitor = (Monitor) o;
-        return getSpecialist() == monitor.getSpecialist() && Arrays.equals(getActivities(), monitor.getActivities());
+        return Objects.equals(getActivities(), monitor.getActivities()) && Objects.equals(getSpecialist(), monitor.getSpecialist());
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(super.hashCode(), getSpecialist());
-        result = 31 * result + Arrays.hashCode(getActivities());
-        return result;
+        return Objects.hash(super.hashCode(), getActivities(), getSpecialist());
     }
 }

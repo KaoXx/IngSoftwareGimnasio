@@ -1,33 +1,35 @@
 package Code;
 
+import java.sql.Array;
 import java.sql.Time;
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
 public class Cleaner extends Employee {
-    Enum AssignedAreas;
-    Time turns; //?
+    Array AssignedAreas;
+    String turns; //?
 
-    public Cleaner(UUID uid, char dni, char name, LocalDate bDayDate, float salary, int tlfNumber, Enum assignedAreas, Time turns) {
-        super(uid, dni, name, bDayDate, salary, tlfNumber);
+    public Cleaner(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array assignedAreas, String turns) {
+        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
         AssignedAreas = assignedAreas;
         this.turns = turns;
     }
 
-    public Enum getAssignedAreas() {
+    public Array getAssignedAreas() {
         return AssignedAreas;
     }
 
-    public void setAssignedAreas(Enum assignedAreas) {
+    public void setAssignedAreas(Array assignedAreas) {
         AssignedAreas = assignedAreas;
     }
 
-    public Time getTurns() {
+    public String getTurns() {
         return turns;
     }
 
-    public void setTurns(Time turns) {
+    public void setTurns(String turns) {
         this.turns = turns;
     }
 

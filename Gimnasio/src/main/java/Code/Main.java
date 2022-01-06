@@ -7,7 +7,6 @@ public class Main {
     private static final String URL ="jdbc:postgresql://35.205.101.101:5432/Gimnasio";
     private static final String USER = "postgres";
     private static final String PASSWORD = "123";
-
     private static Connection conn;
 
     private static void connect() throws SQLException {

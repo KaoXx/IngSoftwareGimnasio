@@ -5,16 +5,18 @@ import java.util.Objects;
 import java.util.UUID;
 public class Employee {
     UUID uid;
-    char dni;
-    char name;
-    LocalDate bDayDate;
+    String dni;
+    String name,email,password;
+    Date bDayDate;
     float salary;
     int tlfNumber;
 
-    public Employee(UUID uid, char dni, char name, LocalDate bDayDate, float salary, int tlfNumber) {
-        this.uid = UUID.randomUUID();
+    public Employee(String dni, String name,String email,String password, Date bDayDate, float salary, int tlfNumber) {
+        uid = UUID.randomUUID();
         this.dni = dni;
         this.name = name;
+        this.email = email;
+        this.password = password;
         this.bDayDate = bDayDate;
         this.salary = salary;
         this.tlfNumber = tlfNumber;
@@ -28,27 +30,27 @@ public class Employee {
         this.uid = uid;
     }
 
-    public char getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(char dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
-    public char getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(char name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public LocalDate getbDayDate() {
+    public Date getbDayDate() {
         return bDayDate;
     }
 
-    public void setbDayDate(LocalDate bDayDate) {
+    public void setbDayDate(Date bDayDate) {
         this.bDayDate = bDayDate;
     }
 
@@ -68,12 +70,30 @@ public class Employee {
         this.tlfNumber = tlfNumber;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
-        return "Empleado{" +
+        return "Employee{" +
                 "uid=" + uid +
-                ", dni=" + dni +
-                ", name=" + name +
+                ", dni='" + dni + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
                 ", bDayDate=" + bDayDate +
                 ", salary=" + salary +
                 ", tlfNumber=" + tlfNumber +
@@ -85,11 +105,11 @@ public class Employee {
         if (this == o) return true;
         if (!(o instanceof Employee)) return false;
         Employee employee = (Employee) o;
-        return getDni() == employee.getDni() && getName() == employee.getName() && Float.compare(employee.getSalary(), getSalary()) == 0 && getTlfNumber() == employee.getTlfNumber() && Objects.equals(getUid(), employee.getUid()) && Objects.equals(getbDayDate(), employee.getbDayDate());
+        return Float.compare(employee.getSalary(), getSalary()) == 0 && getTlfNumber() == employee.getTlfNumber() && Objects.equals(getUid(), employee.getUid()) && Objects.equals(getDni(), employee.getDni()) && Objects.equals(getName(), employee.getName()) && Objects.equals(getEmail(), employee.getEmail()) && Objects.equals(getPassword(), employee.getPassword()) && Objects.equals(getbDayDate(), employee.getbDayDate());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getUid(), getDni(), getName(), getbDayDate(), getSalary(), getTlfNumber());
+        return Objects.hash(getUid(), getDni(), getName(), getEmail(), getPassword(), getbDayDate(), getSalary(), getTlfNumber());
     }
 }

@@ -3,12 +3,15 @@ package Interfaz;
 import Code.Gym;
 import Code.*;
 import javax.swing.*;
+
+import Interfaz_Socio.Socio;
 import utiles.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.LocalTime;
 
 public class VentanaLogin extends javax.swing.JFrame {
+    Program program;
 
     public VentanaLogin() {
         //Aplicacion.cargarDatos();
@@ -495,23 +498,22 @@ public class VentanaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_checkBoxMostrarContraseñaActionPerformed
 
-    private void botonRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarseActionPerformed
-        /*
-        switch (desplegableTipoCliente.getSelectedIndex()){
-            case 0:
+    private void botonRegistrarseActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarseActionPerformed
 
-                //Ubicacion ubicacion = new Ubicacion(campoCiudad.getText(), campoCodigoPostal.getText());
-                //Cliente usuarioNuevo = new Cliente(campoNombreUsuarioRegistro.getText(), campoDNI.getText(), campoCorreoRegistro.getText(), campoContrasennaRegistro.getText(), campoTarjetaCredito.getText(), ubicacion);
+        switch (desplegableTipoCliente.getSelectedIndex()){
+            case 0: //Member
+
+                Member member = new Member();
                 try {
-                    //Aplicacion.registrarCliente(usuarioNuevo);
+                    program.SignUp(member); //Se inserta en la base de datos
                     //Aplicacion.setUsuarioLogueado(usuarioNuevo);
                     VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
                     this.dispose();
-                } catch (Excepcion ex) {
+                } catch (Excepcion excepcion) {
                     JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
             
-            case 1:
+            case 1: // Monitor
                 horarioAperturaClienteProfesional = VentanaHorario.getHorarioApertura();
 
                 //Ubicacion ubicacion = new Ubicacion(campoCiudad.getText(), campoCodigoPostal.getText());
@@ -521,11 +523,29 @@ public class VentanaLogin extends javax.swing.JFrame {
                     //Aplicacion.setUsuarioLogueado(usuarioProfesionalNuevo);
                     VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
                     this.dispose();
-                } catch (Excepcion ex) {
+                } catch (Excepcion excepcion) {
                     JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
+            case 2: //Receptionist
+
+
+                try{
+
+                }
+                catch (Excepcion excepcion){
+                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+                }
+            case 3: //Trainer
+                try{
+
+                }
+                catch (Excepcion excepcion){
+                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+                }
+
+
         }
-        */
+
     }//GEN-LAST:event_botonRegistrarseActionPerformed
 
     private void campoContrasennaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoContrasennaKeyTyped
