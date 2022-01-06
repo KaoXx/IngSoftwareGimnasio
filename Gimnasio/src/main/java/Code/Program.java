@@ -33,7 +33,7 @@ public class Program {
             stmt.setArray(10,((Trainer) employee).getFreeHours());
             stmt.setArray(11,((Trainer) employee).getReservedHours());
         }else if(employee instanceof Cleaner){
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO Entrenador" + " VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO Limpiador" + " VALUES (?,?,?,?,?,?,?,?,?,?,?)");
             RegularEmployee(employee,stmt);
             stmt.setString(10,((Cleaner) employee).getTurns());
             stmt.setArray(11,((Cleaner) employee).getAssignedAreas());
@@ -65,9 +65,9 @@ public class Program {
         stmt.setString(10,null);
     }
 
-    public void SignUp(Member member){
-
-
+    public void SignUp(Member member) throws SQLException {
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO Socio VALUES (?,?,?,?,?,?,?,?,?,?)");
+        RegularMember(member,stmt);
     }
 
 
