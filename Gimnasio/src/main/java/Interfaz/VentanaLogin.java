@@ -11,10 +11,8 @@ import java.time.LocalTime;
 public class VentanaLogin extends javax.swing.JFrame {
 
     public VentanaLogin() {
-        //Aplicacion.cargarDatos();
         initComponents();
         scrollLaminaRegistrarse.setVisible(false);
-        inicializarComponentesRegistro();
     }
 
     @SuppressWarnings("unchecked")
@@ -47,25 +45,18 @@ public class VentanaLogin extends javax.swing.JFrame {
         campoNombreUsuarioRegistro = new javax.swing.JTextField();
         textoTipoCuenta1 = new javax.swing.JLabel();
         campoNombreUsuarioRegistro1 = new javax.swing.JTextField();
-        textocontrasennaRegistro = new javax.swing.JLabel();
-        campoContrasennaRegistro = new javax.swing.JTextField();
-        textoDNI = new javax.swing.JLabel();
-        campoDNI = new javax.swing.JTextField();
-        textoCorreoRegistro = new javax.swing.JLabel();
+        textocorreo = new javax.swing.JLabel();
         campoCorreoRegistro = new javax.swing.JTextField();
-        textoTarjetaCredito = new javax.swing.JLabel();
-        campoTarjetaCredito = new javax.swing.JTextField();
-        textoCodigoPostal = new javax.swing.JLabel();
-        campoCodigoPostal = new javax.swing.JTextField();
+        textoContrasennaRegistro = new javax.swing.JLabel();
+        campoContrasennaRegistro = new javax.swing.JTextField();
+        textoNumeroTelefono = new javax.swing.JLabel();
+        campoNumeroTelefono = new javax.swing.JTextField();
+        textoIBAN = new javax.swing.JLabel();
+        campoIBAN = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gimnasio");
         setIconImage(new ImageIcon("src/main/java/imagenes/logo.png").getImage());
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosing(java.awt.event.WindowEvent evt) {
-                formWindowClosing(evt);
-            }
-        });
 
         laminaLogin.setBackground(new java.awt.Color(33, 45, 62));
 
@@ -162,10 +153,10 @@ public class VentanaLogin extends javax.swing.JFrame {
                                 .addComponent(imagenArroba)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(laminaLoginLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGap(0, 24, Short.MAX_VALUE)
                                 .addGroup(laminaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(campoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(campoContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(campoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(campoContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(37, 37, 37))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, laminaLoginLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -186,8 +177,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                         .addComponent(textoClickAqui))
                     .addGroup(laminaLoginLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
-                        .addComponent(botonIniciarSesion)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                        .addComponent(botonIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         laminaLoginLayout.setVerticalGroup(
             laminaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,8 +203,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                         .addComponent(separadorContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(checkBoxMostrarContraseña)
-                        .addGap(52, 52, 52)
-                        .addComponent(botonIniciarSesion)
+                        .addGap(18, 18, 18)
+                        .addComponent(botonIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(60, 60, 60)
                         .addGroup(laminaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textoRegistrarse)
@@ -272,13 +263,8 @@ public class VentanaLogin extends javax.swing.JFrame {
         laminaObjetosRegistrarse.add(textoTipoCuenta);
 
         desplegableTipoCliente.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 12)); // NOI18N
-        desplegableTipoCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Miembro", "Monitor", "Recepcionista", "Entrenador" }));
+        desplegableTipoCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Estudiante", "Jubilado", "Familia numerosa" }));
         desplegableTipoCliente.setSelectedIndex(0);
-        desplegableTipoCliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                desplegableTipoClienteActionPerformed(evt);
-            }
-        });
         laminaObjetosRegistrarse.add(desplegableTipoCliente);
 
         textoNombreUsuarioRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
@@ -305,35 +291,11 @@ public class VentanaLogin extends javax.swing.JFrame {
         campoNombreUsuarioRegistro1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
         laminaObjetosRegistrarse.add(campoNombreUsuarioRegistro1);
 
-        textocontrasennaRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
-        textocontrasennaRegistro.setForeground(new java.awt.Color(255, 255, 255));
-        textocontrasennaRegistro.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        textocontrasennaRegistro.setText("Contraseña:");
-        laminaObjetosRegistrarse.add(textocontrasennaRegistro);
-
-        campoContrasennaRegistro.setBackground(new java.awt.Color(33, 45, 62));
-        campoContrasennaRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
-        campoContrasennaRegistro.setForeground(new java.awt.Color(73, 181, 172));
-        campoContrasennaRegistro.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
-        laminaObjetosRegistrarse.add(campoContrasennaRegistro);
-
-        textoDNI.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
-        textoDNI.setForeground(new java.awt.Color(255, 255, 255));
-        textoDNI.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        textoDNI.setText("DNI:");
-        laminaObjetosRegistrarse.add(textoDNI);
-
-        campoDNI.setBackground(new java.awt.Color(33, 45, 62));
-        campoDNI.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
-        campoDNI.setForeground(new java.awt.Color(73, 181, 172));
-        campoDNI.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
-        laminaObjetosRegistrarse.add(campoDNI);
-
-        textoCorreoRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
-        textoCorreoRegistro.setForeground(new java.awt.Color(255, 255, 255));
-        textoCorreoRegistro.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        textoCorreoRegistro.setText("Correo electrónico:");
-        laminaObjetosRegistrarse.add(textoCorreoRegistro);
+        textocorreo.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
+        textocorreo.setForeground(new java.awt.Color(255, 255, 255));
+        textocorreo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        textocorreo.setText("Correo electrónico:");
+        laminaObjetosRegistrarse.add(textocorreo);
 
         campoCorreoRegistro.setBackground(new java.awt.Color(33, 45, 62));
         campoCorreoRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
@@ -341,43 +303,56 @@ public class VentanaLogin extends javax.swing.JFrame {
         campoCorreoRegistro.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
         laminaObjetosRegistrarse.add(campoCorreoRegistro);
 
-        textoTarjetaCredito.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
-        textoTarjetaCredito.setForeground(new java.awt.Color(255, 255, 255));
-        textoTarjetaCredito.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        textoTarjetaCredito.setText("Tarjeta de crédito:");
-        laminaObjetosRegistrarse.add(textoTarjetaCredito);
+        textoContrasennaRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
+        textoContrasennaRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        textoContrasennaRegistro.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        textoContrasennaRegistro.setText("Contraseña:");
+        laminaObjetosRegistrarse.add(textoContrasennaRegistro);
 
-        campoTarjetaCredito.setBackground(new java.awt.Color(33, 45, 62));
-        campoTarjetaCredito.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
-        campoTarjetaCredito.setForeground(new java.awt.Color(73, 181, 172));
-        campoTarjetaCredito.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
-        laminaObjetosRegistrarse.add(campoTarjetaCredito);
+        campoContrasennaRegistro.setBackground(new java.awt.Color(33, 45, 62));
+        campoContrasennaRegistro.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
+        campoContrasennaRegistro.setForeground(new java.awt.Color(73, 181, 172));
+        campoContrasennaRegistro.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
+        laminaObjetosRegistrarse.add(campoContrasennaRegistro);
 
-        textoCodigoPostal.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
-        textoCodigoPostal.setForeground(new java.awt.Color(255, 255, 255));
-        textoCodigoPostal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        textoCodigoPostal.setText("Codigo postal:");
-        laminaObjetosRegistrarse.add(textoCodigoPostal);
+        textoNumeroTelefono.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
+        textoNumeroTelefono.setForeground(new java.awt.Color(255, 255, 255));
+        textoNumeroTelefono.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        textoNumeroTelefono.setText("Número de teléfono:");
+        laminaObjetosRegistrarse.add(textoNumeroTelefono);
 
-        campoCodigoPostal.setBackground(new java.awt.Color(33, 45, 62));
-        campoCodigoPostal.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
-        campoCodigoPostal.setForeground(new java.awt.Color(73, 181, 172));
-        campoCodigoPostal.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
-        laminaObjetosRegistrarse.add(campoCodigoPostal);
+        campoNumeroTelefono.setBackground(new java.awt.Color(33, 45, 62));
+        campoNumeroTelefono.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
+        campoNumeroTelefono.setForeground(new java.awt.Color(73, 181, 172));
+        campoNumeroTelefono.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
+        laminaObjetosRegistrarse.add(campoNumeroTelefono);
+
+        textoIBAN.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 16)); // NOI18N
+        textoIBAN.setForeground(new java.awt.Color(255, 255, 255));
+        textoIBAN.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        textoIBAN.setText("Número IBAN:");
+        laminaObjetosRegistrarse.add(textoIBAN);
+
+        campoIBAN.setBackground(new java.awt.Color(33, 45, 62));
+        campoIBAN.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
+        campoIBAN.setForeground(new java.awt.Color(73, 181, 172));
+        campoIBAN.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 0)));
+        laminaObjetosRegistrarse.add(campoIBAN);
 
         javax.swing.GroupLayout laminaRegistrarseLayout = new javax.swing.GroupLayout(laminaRegistrarse);
         laminaRegistrarse.setLayout(laminaRegistrarseLayout);
         laminaRegistrarseLayout.setHorizontalGroup(
             laminaRegistrarseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(laminaBotonRegistrarse, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
+            .addComponent(laminaBotonRegistrarse, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)
             .addComponent(laminaObjetosRegistrarse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         laminaRegistrarseLayout.setVerticalGroup(
             laminaRegistrarseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(laminaRegistrarseLayout.createSequentialGroup()
-                .addComponent(laminaObjetosRegistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 616, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(laminaObjetosRegistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(laminaBotonRegistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(laminaBotonRegistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
 
         scrollLaminaRegistrarse.setViewportView(laminaRegistrarse);
@@ -450,36 +425,6 @@ public class VentanaLogin extends javax.swing.JFrame {
         scrollLaminaRegistrarse.setVisible(true);
     }//GEN-LAST:event_textoClickAquiMousePressed
 
-    private void desplegableTipoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desplegableTipoClienteActionPerformed
-        if (desplegableTipoCliente.getSelectedIndex() == 0) {
-            laminaObjetosRegistrarse.remove(textoDescripcion);
-            laminaObjetosRegistrarse.remove(campoDescripcion);
-            laminaObjetosRegistrarse.remove(textoTelefono);
-            laminaObjetosRegistrarse.remove(campoTelefono);
-            laminaObjetosRegistrarse.remove(textoWeb);
-            laminaObjetosRegistrarse.remove(campoWeb);
-            laminaObjetosRegistrarse.remove(textoHorario);
-            laminaObjetosRegistrarse.remove(cajaHorizontalHorario);
-            GridLayout layout = (GridLayout) laminaObjetosRegistrarse.getLayout();
-            layout.setVgap(40);
-            scrollLaminaRegistrarse.updateUI();
-        }
-        else if (desplegableTipoCliente.getSelectedIndex() == 1) {
-            laminaObjetosRegistrarse.add(textoDescripcion);
-            laminaObjetosRegistrarse.add(campoDescripcion);
-            laminaObjetosRegistrarse.add(textoTelefono);
-            laminaObjetosRegistrarse.add(campoTelefono);
-            laminaObjetosRegistrarse.add(textoWeb);
-            laminaObjetosRegistrarse.add(campoWeb);
-            laminaObjetosRegistrarse.add(textoHorario);
-            laminaObjetosRegistrarse.add(cajaHorizontalHorario);
-            GridLayout layout = (GridLayout) laminaObjetosRegistrarse.getLayout();
-            layout.setVgap(25);
-            scrollLaminaRegistrarse.updateUI();
-        } 
-        
-    }//GEN-LAST:event_desplegableTipoClienteActionPerformed
-
     private void botonAtrasRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAtrasRegistrarseActionPerformed
         reiniciarCamposLogin();
         laminaLogin.setVisible(true);
@@ -540,10 +485,6 @@ public class VentanaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_campoCorreoKeyTyped
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        //Aplicacion.guardarDatos();
-    }//GEN-LAST:event_formWindowClosing
-
     private void reiniciarCamposLogin() {
         campoCorreo.setText("");
         campoContrasenna.setText("");
@@ -551,104 +492,6 @@ public class VentanaLogin extends javax.swing.JFrame {
         imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/Candado.png"));
         separadorCorreo.setBackground(new Color(73, 181, 172));
         separadorContrasenna.setBackground(new Color(73, 181, 172));
-    }
-
-    private void botonVerHorarioActionPerformed(ActionEvent evt) {
-        /*try {
-            ventanaHorario.setVisible(true);
-            VentanaHorario.laminaVerHorario.setVisible(true);
-            VentanaHorario.scrolllaminaAñadirHorario.setVisible(false);
-        } catch (NullPointerException e) {
-            JOptionPane.showMessageDialog(this, "Primero debes añadir un horario", "ERROR", JOptionPane.ERROR_MESSAGE);
-        }*/
-    }
-
-    private void botonAñadirHorarioActionPerformed(ActionEvent evt) {/*
-        botonVerHorario.setIcon(new ImageIcon("src/main/java/imagenes/BotonVer.png"));
-        botonVerHorario.setPressedIcon(new ImageIcon("src/main/java/imagenes/BotonVerPulsado.png"));
-        botonVerHorario.setRolloverIcon(new ImageIcon("src/main/java/imagenes/BotonVerSeleccionado.png"));
-        ventanaHorario = new VentanaHorario();
-        ventanaHorario.setVisible(true);
-        VentanaHorario.scrolllaminaAñadirHorario.setVisible(true);
-        VentanaHorario.laminaVerHorario.setVisible(false);*/
-    }
-
-    private void inicializarComponentesRegistro() {
-        scrollLaminaRegistrarse.getVerticalScrollBar().setUnitIncrement(7); //aumentar la velocidad del scrollbar
-
-        textoDescripcion = new JLabel("Descripcion:");
-        Util_Interfaz.establecerModeloLetrasRegistro(textoDescripcion);
-        campoDescripcion = new JTextField();
-        establecerModeloCamposRegistro(campoDescripcion);
-        textoTelefono = new JLabel("Telefono:");
-        Util_Interfaz.establecerModeloLetrasRegistro(textoTelefono);
-        campoTelefono = new JTextField();
-        establecerModeloCamposRegistro(campoTelefono);
-        textoWeb = new JLabel("Página web:");
-        Util_Interfaz.establecerModeloLetrasRegistro(textoWeb);
-        campoWeb = new JTextField();
-        establecerModeloCamposRegistro(campoWeb);
-
-        textoHorario = new JLabel("Horario:");
-        Util_Interfaz.establecerModeloLetrasRegistro(textoHorario);
-
-        cajaHorizontalHorario = Box.createHorizontalBox();
-        botonVerHorario = new JButton(new ImageIcon("src/main/java/imagenes/BotonVerRojo.png"));
-        botonVerHorario.setPressedIcon(new ImageIcon("src/main/java/imagenes/BotonVerRojoPulsado.png"));
-        botonVerHorario.setRolloverIcon(new ImageIcon("src/main/java/imagenes/BotonVerRojoSeleccionado.png"));
-        botonVerHorario.setBorderPainted(false);
-        botonVerHorario.setContentAreaFilled(false);
-
-        botonAñadirHorario = new JButton(new ImageIcon("src/main/java/imagenes/BotonAñadir.png"));
-        botonAñadirHorario.setPressedIcon(new ImageIcon("src/main/java/imagenes/BotonAñadirPulsado.png"));
-        botonAñadirHorario.setRolloverIcon(new ImageIcon("src/main/java/imagenes/BotonAñadirSeleccionado.png"));
-        botonAñadirHorario.setBorderPainted(false);
-        botonAñadirHorario.setContentAreaFilled(false);
-        cajaHorizontalHorario.add(botonVerHorario);
-        cajaHorizontalHorario.add(Box.createHorizontalStrut(-20)); //añadir separacion
-        cajaHorizontalHorario.add(botonAñadirHorario);
-
-        botonVerHorario.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                botonVerHorarioActionPerformed(evt);
-            }
-        });
-
-        botonAñadirHorario.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent evt) {
-                botonAñadirHorarioActionPerformed(evt);
-            }
-        });
-    }
-
-    private void establecerModeloCamposRegistro(JTextField campo) {
-        campo.setBackground(new Color(33, 45, 62));
-        campo.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14));
-        campo.setForeground(new Color(73, 181, 172));
-        campo.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(new Color(255, 255, 255)), BorderFactory.createEmptyBorder(5, 5, 5, 0)));
-    }
-
-    private boolean comprobarUsuarioContrasenna(String nombreUsuario, String contrasenna) {/*
-        try {
-            for (Cliente usuario : Aplicacion.getClientesRegistrados()) {
-                if (usuario.getNombre().equals(nombreUsuario)) {
-                    if (usuario.getContrasenna().equals(contrasenna)) {
-                        return true;
-                    } else {
-                        campoCorreo.setBackground(new Color(33, 45, 62));
-                        campoContrasenna.setBackground(Color.red);
-                        throw new Excepcion("La contraseña introducida es incorrecta");
-                    }
-                }
-            }
-            campoContrasenna.setBackground(new Color(33, 45, 62));
-            campoCorreo.setBackground(new Color(33, 45, 62));
-            throw new Excepcion("El nombre de usuario no existe, si desea crear una cuenta, pulse aquí");
-        } catch (Excepcion e) {
-            JOptionPane.showMessageDialog(this, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
-        }*/
-        return false;
     }
 
     public static void main(String args[]) {
@@ -688,15 +531,14 @@ public class VentanaLogin extends javax.swing.JFrame {
     private javax.swing.JButton botonAtrasRegistrarse;
     private javax.swing.JButton botonIniciarSesion;
     private javax.swing.JButton botonRegistrarse;
-    private javax.swing.JTextField campoCodigoPostal;
     private javax.swing.JPasswordField campoContrasenna;
     private javax.swing.JTextField campoContrasennaRegistro;
     private javax.swing.JTextField campoCorreo;
     private javax.swing.JTextField campoCorreoRegistro;
-    private javax.swing.JTextField campoDNI;
+    private javax.swing.JTextField campoIBAN;
     private javax.swing.JTextField campoNombreUsuarioRegistro;
     private javax.swing.JTextField campoNombreUsuarioRegistro1;
-    private javax.swing.JTextField campoTarjetaCredito;
+    private javax.swing.JTextField campoNumeroTelefono;
     private javax.swing.JCheckBox checkBoxMostrarContraseña;
     private javax.swing.JComboBox<String> desplegableTipoCliente;
     private javax.swing.JLabel imagenArroba;
@@ -710,32 +552,16 @@ public class VentanaLogin extends javax.swing.JFrame {
     private javax.swing.JSeparator separadorContrasenna;
     private javax.swing.JSeparator separadorCorreo;
     private javax.swing.JLabel textoClickAqui;
-    private javax.swing.JLabel textoCodigoPostal;
     private javax.swing.JLabel textoContrasenna;
+    private javax.swing.JLabel textoContrasennaRegistro;
     private javax.swing.JLabel textoCorreo;
-    private javax.swing.JLabel textoCorreoRegistro;
-    private javax.swing.JLabel textoDNI;
+    private javax.swing.JLabel textoIBAN;
     private javax.swing.JLabel textoNombreUsuarioRegistro;
+    private javax.swing.JLabel textoNumeroTelefono;
     private javax.swing.JLabel textoRegistrarse;
-    private javax.swing.JLabel textoTarjetaCredito;
     private javax.swing.JLabel textoTipoCuenta;
     private javax.swing.JLabel textoTipoCuenta1;
-    private javax.swing.JLabel textocontrasennaRegistro;
+    private javax.swing.JLabel textocorreo;
     // End of variables declaration//GEN-END:variables
 
-    private JLabel textoDescripcion;
-    private JTextField campoDescripcion;
-    private JLabel textoTelefono;
-    private JTextField campoTelefono;
-    private JLabel textoWeb;
-    private JTextField campoWeb;
-    private JLabel textoHorario;
-    private Box cajaHorizontalHorario;
-    private JButton botonVerHorario;
-    private JButton botonAñadirHorario;
-    //private VentanaHorario ventanaHorario;
-
-    //private VentanaVerPerfil ventanaVerPerfil;
-
-    private LocalTime[][] horarioAperturaClienteProfesional;
 }
