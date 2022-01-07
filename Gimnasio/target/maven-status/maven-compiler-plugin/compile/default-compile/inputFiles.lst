@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Activity.java
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Employee.java
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Enums/GymAreas.java
@@ -11,3 +12,18 @@
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Receptionist.java
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Trainer.java
 /Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/utiles/Excepcion.java
+=======
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Member.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Excepcion.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Trainer.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz\VentanaLogin.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Monitor.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Employee.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Cleaner.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Activity.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Main.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Gym.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Util_Interfaz.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Receptionist.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Enums\GymAreas.java
+>>>>>>> login

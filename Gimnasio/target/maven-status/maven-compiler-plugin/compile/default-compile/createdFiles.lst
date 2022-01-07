@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Interfaz_Socio/Opciones_cuota$2.class
 Code/Activity.class
 Interfaz_Socio/Socio$6.class
@@ -37,3 +38,30 @@ Code/Receptionist.class
 utiles/Util_Interfaz.class
 Code/Trainer.class
 Code/Monitor.class
+=======
+Interfaz\VentanaLogin$7.class
+Code\Receptionist.class
+Interfaz\VentanaLogin$5.class
+Interfaz\VentanaLogin.class
+Code\Monitor.class
+Code\Trainer.class
+Code\Member.class
+Interfaz\VentanaLogin$9.class
+Interfaz\VentanaLogin$12.class
+Interfaz\VentanaLogin$3.class
+Code\Cleaner.class
+Interfaz\VentanaLogin$10.class
+utiles\Util_Interfaz.class
+Code\Gym.class
+Interfaz\VentanaLogin$6.class
+Code\Activity.class
+Interfaz\VentanaLogin$1.class
+Code\Employee.class
+Interfaz\VentanaLogin$8.class
+Code\Main.class
+Interfaz\VentanaLogin$4.class
+Enums\GymAreas.class
+utiles\Excepcion.class
+Interfaz\VentanaLogin$11.class
+Interfaz\VentanaLogin$2.class
+>>>>>>> login
