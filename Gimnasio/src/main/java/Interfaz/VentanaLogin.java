@@ -8,10 +8,11 @@ import Interfaz_Socio.Socio;
 import utiles.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.SQLException;
 import java.time.LocalTime;
 
 public class VentanaLogin extends javax.swing.JFrame {
-    Program program;
+    Gym gym;
 
     public VentanaLogin() {
         initComponents();
@@ -462,11 +463,11 @@ public class VentanaLogin extends javax.swing.JFrame {
 
                 Member member = new Member();
                 try {
-                    program.SignUp(member); //Se inserta en la base de datos
+                    gym.SignUp(member);//Se inserta en la base de datos
                     //Aplicacion.setUsuarioLogueado(usuarioNuevo);
                     VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
                     this.dispose();
-                } catch (Excepcion excepcion) {
+                } catch (Excepcion | SQLException exception) {
                     JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
             
