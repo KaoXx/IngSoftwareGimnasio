@@ -5,8 +5,8 @@ import java.util.Date;
 import java.util.UUID;
 
 public class Receptionist extends Employee {
-    public Receptionist(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber) {
-        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
+    public Receptionist(String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber) {
+        super(dni, name, email, password, bDayDate, salary, tlfNumber);
     }
 
     @Override

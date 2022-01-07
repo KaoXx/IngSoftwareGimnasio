@@ -12,7 +12,7 @@ public class Cleaner extends Employee {
     String turns; //?
 
     public Cleaner(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array assignedAreas, String turns) {
-        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
+        super(dni, name, email, password, bDayDate, salary, tlfNumber);
         AssignedAreas = assignedAreas;
         this.turns = turns;
     }

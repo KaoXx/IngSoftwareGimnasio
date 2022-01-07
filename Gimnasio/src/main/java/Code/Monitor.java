@@ -10,8 +10,8 @@ public class Monitor extends Employee {
     Array Activities;
     String Specialist;
 
-    public Monitor(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array activities, String specialist) {
-        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
+    public Monitor(String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array activities, String specialist) {
+        super(dni, name, email, password, bDayDate, salary, tlfNumber);
         Activities = activities;
         Specialist = specialist;
     }

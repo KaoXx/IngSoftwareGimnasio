@@ -443,8 +443,20 @@ public class VentanaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_checkBoxMostrarContraseñaActionPerformed
 
-    private void botonRegistrarseActionPerformedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarseActionPerformed
+    private void campoContrasennaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoContrasennaKeyTyped
+        if (evt.getKeyChar() == KeyEvent.VK_ENTER) {
+            botonIniciarSesion.doClick(); //da un click al boton de iniciar sesion
+        }
+    }//GEN-LAST:event_campoContrasennaKeyTyped
 
+    private void campoCorreoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoCorreoKeyTyped
+        if (evt.getKeyChar() == KeyEvent.VK_ENTER) {
+            campoContrasenna.requestFocus(); //le pasa el foco al campo contraseña
+        }
+    }//GEN-LAST:event_campoCorreoKeyTyped
+
+    private void botonRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarseActionPerformed
+        /*
         switch (desplegableTipoCliente.getSelectedIndex()){
             case 0: //Member
 
@@ -490,20 +502,8 @@ public class VentanaLogin extends javax.swing.JFrame {
 
 
         }
-
+        */
     }//GEN-LAST:event_botonRegistrarseActionPerformed
-
-    private void campoContrasennaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoContrasennaKeyTyped
-        if (evt.getKeyChar() == KeyEvent.VK_ENTER) {
-            botonIniciarSesion.doClick(); //da un click al boton de iniciar sesion
-        }
-    }//GEN-LAST:event_campoContrasennaKeyTyped
-
-    private void campoCorreoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campoCorreoKeyTyped
-        if (evt.getKeyChar() == KeyEvent.VK_ENTER) {
-            campoContrasenna.requestFocus(); //le pasa el foco al campo contraseña
-        }
-    }//GEN-LAST:event_campoCorreoKeyTyped
 
     private void reiniciarCamposLogin() {
         campoCorreo.setText("");

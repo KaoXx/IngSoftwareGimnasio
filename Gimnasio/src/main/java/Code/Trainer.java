@@ -12,8 +12,8 @@ public class Trainer extends Employee {
     Array freeHours;
     Array reservedHours;
 
-    public Trainer(UUID uid, String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array freeHours, Array reservedHours) {
-        super(uid, dni, name, email, password, bDayDate, salary, tlfNumber);
+    public Trainer(String dni, String name, String email, String password, Date bDayDate, float salary, int tlfNumber, Array freeHours, Array reservedHours) {
+        super(dni, name, email, password, bDayDate, salary, tlfNumber);
         this.freeHours = freeHours;
         this.reservedHours = reservedHours;
     }
