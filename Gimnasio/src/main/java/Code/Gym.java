@@ -21,6 +21,10 @@ public class Gym {
         this.members = members;
         this.activities = activities;
     }
+    
+    public Gym(){
+        
+    }
 
     public int getId() {
         return id;
@@ -118,7 +122,11 @@ public class Gym {
         RegularMember(member,stmt);
     }
 
-    public void SignIn(String email,String password) throws SQLException {
+    /*
+        Retorna 0 si es un socio, 1 si es un entrenador, 2 si es un monitor, 3 si es un limpiador y -1 si ha sucedido algun error o no coinciden las credenciales.
+    */
+    public int SignIn(String email,String password) throws SQLException {
+        connect();
         PreparedStatement stmt = conn.prepareStatement("SELECT Email,Contrasenna FROM Socio WHERE Email=(?) AND Contrasenna=(?)");
         stmt.setString(1,email);
         stmt.setString(2,password);
@@ -131,9 +139,8 @@ public class Gym {
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
                     r = false;
-                    JOptionPane.showConfirmDialog(null,"BIENVENIDO DE NUEVO");
-                    //ADD THE FOLLOWING INTERFACE -> SOCIO
-
+                    
+                    return 0;
                 }
             }
         }catch(SQLException e){
@@ -150,9 +157,8 @@ public class Gym {
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
                     r = false;
-                    JOptionPane.showConfirmDialog(null,"BIENVENIDO DE NUEVO");
-                    //ADD THE FOLLOWING INTERFACE -> ENTRENADOR
-
+                    
+                    return 1;
                 }
             }
         }catch(SQLException e){
@@ -169,9 +175,8 @@ public class Gym {
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
                     r = false;
-                    JOptionPane.showConfirmDialog(null,"BIENVENIDO DE NUEVO");
-                    //ADD THE FOLLOWING INTERFACE -> MONITOR
-
+                    
+                    return 2;
                 }
             }
         }catch(SQLException e){
@@ -188,9 +193,8 @@ public class Gym {
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
                     r = false;
-                    JOptionPane.showConfirmDialog(null,"BIENVENIDO DE NUEVO");
-                    //ADD THE FOLLOWING INTERFACE -> MONITOR
-
+                    
+                    return 3;
                 }
             }
         }catch(SQLException e){
@@ -199,8 +203,7 @@ public class Gym {
         if(r == true){
             JOptionPane.showMessageDialog(null,"El usuario o la contrasenna son erroneos","Error de inicio de sesion",JOptionPane.ERROR_MESSAGE);
         }
-
-
+        return -1;
     }
 
 }

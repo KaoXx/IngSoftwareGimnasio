@@ -4,7 +4,7 @@ import Code.Gym;
 import Code.*;
 import javax.swing.*;
 
-import Interfaz_Socio.Socio;
+import Interfaz_Socio.VentanaSocio;
 import utiles.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -16,6 +16,7 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     public VentanaLogin() {
         initComponents();
+        gym = new Gym();
         scrollLaminaRegistrarse.setVisible(false);
     }
 
@@ -395,33 +396,57 @@ public class VentanaLogin extends javax.swing.JFrame {
     }
 
     private void botonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIniciarSesionActionPerformed
-        /*
-        int validarIniciarSesion = Gym.iniciarSesion(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
-        switch (validarIniciarSesion) {
+        try {
+            int inicioSesion = gym.SignIn(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
+            
+            switch (inicioSesion){
+                case 0:
+                    VentanaSocio ventanaSocio = new VentanaSocio();
+                    this.dispose();
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case -1: //No cuadran los credenciales
+                    imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));
+                    separadorCorreo.setBackground(Color.red);
+                    imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/CandadoRojo.png"));
+                    separadorContrasenna.setBackground(Color.red);
+                    break;
+            }
+            /*
+            int validarIniciarSesion = Gym.iniciarSesion(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
+            switch (validarIniciarSesion) {
             case 0:
-                VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
-                this.dispose();
-                break;
+            VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
+            this.dispose();
+            break;
             case 1:
-                VentanaPrincipal ventanaPrincipalAdmin = new VentanaPrincipal(Administrador.ADMINISTRADOR);
-                this.dispose();
-                break;
+            VentanaPrincipal ventanaPrincipalAdmin = new VentanaPrincipal(Administrador.ADMINISTRADOR);
+            this.dispose();
+            break;
             case -1:
-                JOptionPane.showMessageDialog(this, "Contraseña incorrecta", "ERROR", JOptionPane.ERROR_MESSAGE);
-                imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/Arroba.png"));
-                separadorCorreo.setBackground(new Color(73, 181, 172));
-                imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/CandadoRojo.png"));
-                separadorContrasenna.setBackground(Color.red);
-                break;
+            JOptionPane.showMessageDialog(this, "Contraseña incorrecta", "ERROR", JOptionPane.ERROR_MESSAGE);
+            imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/Arroba.png"));
+            separadorCorreo.setBackground(new Color(73, 181, 172));
+            imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/CandadoRojo.png"));
+            separadorContrasenna.setBackground(Color.red);
+            break;
             default:
-                JOptionPane.showMessageDialog(this, "Correo electrónico incorrecto", "ERROR", JOptionPane.ERROR_MESSAGE);
-                imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));
-                separadorCorreo.setBackground(Color.red);
-                imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/Candado.png"));
-                separadorContrasenna.setBackground(new Color(73, 181, 172));
-                break;
+            JOptionPane.showMessageDialog(this, "Correo electrónico incorrecto", "ERROR", JOptionPane.ERROR_MESSAGE);
+            imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));
+            separadorCorreo.setBackground(Color.red);
+            imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/Candado.png"));
+            separadorContrasenna.setBackground(new Color(73, 181, 172));
+            break;
+            }
+        */      
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
         }
-*/
     }//GEN-LAST:event_botonIniciarSesionActionPerformed
 
     private void textoClickAquiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textoClickAquiMousePressed

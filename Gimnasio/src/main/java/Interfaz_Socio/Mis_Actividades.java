@@ -125,7 +125,7 @@ public class Mis_Actividades extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Socio sc = new Socio();
+        VentanaSocio sc = new VentanaSocio();
         sc.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed

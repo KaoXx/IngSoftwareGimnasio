@@ -110,7 +110,7 @@ public class Registros_Socio extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        Socio sc = new Socio();
+        VentanaSocio sc = new VentanaSocio();
         sc.setVisible(true);
         this.setVisible(false);
         
