@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="Eliminacion de clase innecesaria">
+    <list default="true" id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="LOG IN COMPLETO">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_3_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gimnasio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gimnasio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Code/Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/postgresql-42.3.1.jar" />
@@ -52,7 +57,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="aws" />
@@ -60,6 +65,7 @@
   <component name="RunManager" selected="Application.VentanaLogin">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Code.Main" />
+      <module name="Gimnasio" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Code.*" />
@@ -155,8 +161,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.VentanaLogin" />
-        <item itemvalue="Application.Socio" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Socio" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -191,7 +197,9 @@
       <workItem from="1641432474295" duration="1103000" />
       <workItem from="1641473708822" duration="1551000" />
       <workItem from="1641475326377" duration="11253000" />
-      <workItem from="1641567042026" duration="8614000" />
+      <workItem from="1641567042026" duration="8942000" />
+      <workItem from="1641650819675" duration="2159000" />
+      <workItem from="1641675053939" duration="2731000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de las clases necesarias para el GYM">
       <created>1640795363524</created>
@@ -249,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641582613004</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="LOG IN COMPLETO">
+      <created>1641584404438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641584404438</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +299,8 @@
     <MESSAGE value="Añadir accion SignUp" />
     <MESSAGE value="Añadir accion Sign In" />
     <MESSAGE value="Eliminacion de clase innecesaria" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminacion de clase innecesaria" />
+    <MESSAGE value="LOG IN COMPLETO" />
+    <option name="LAST_COMMIT_MESSAGE" value="LOG IN COMPLETO" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

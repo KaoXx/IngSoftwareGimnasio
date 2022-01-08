@@ -3,6 +3,7 @@ package Code;
 import utiles.Excepcion;
 
 import javax.swing.*;
+import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 
 public class Gym {
@@ -127,31 +128,35 @@ public class Gym {
     */
     public int SignIn(String email,String password) throws SQLException {
         connect();
-        PreparedStatement stmt = conn.prepareStatement("SELECT Email,Contrasenna FROM Socio WHERE Email=(?) AND Contrasenna=(?)");
-        stmt.setString(1,email);
-        stmt.setString(2,password);
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         boolean r = true;
         try{
-            connect();
-            ResultSet rs = stmt.executeQuery();
+            String consult = "SELECT \"Email\",\"Contrasenna\"FROM \"Socio\" WHERE \"Email\"=? AND \"Contrasenna\" =?";
+            ps = conn.prepareStatement(consult);
+            ps.setString(1,email);
+            ps.setString(2,password);
+            rs = ps.executeQuery();
             if(rs.next()){ //IF USER EXISTS IN DATABASE
+                System.out.println("lol");
                 String user = rs.getString("Email");
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
                     r = false;
-                    
+
                     return 0;
                 }
             }
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
         };
-        PreparedStatement stmt1 = conn.prepareStatement("SELECT Email,Contrasenna FROM Entrenador WHERE Email=(?) AND Contrasenna=(?)");
-        stmt.setString(1,email);
-        stmt.setString(2,password);
+
         try{
-            connect();
-            ResultSet rs = stmt1.executeQuery();
+            String consult = "SELECT \"Email\",\"Contrasenna\"FROM \"Entrenador\" WHERE \"Email\"=? AND \"Contrasenna\" =?";
+            ps = conn.prepareStatement(consult);
+            ps.setString(1,email);
+            ps.setString(2,password);
+            rs = ps.executeQuery();
             if(rs.next()){ //IF USER EXISTS IN DATABASE
                 String user = rs.getString("Email");
                 String pass = rs.getString("Contrasenna");
@@ -164,12 +169,12 @@ public class Gym {
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
         };
-        PreparedStatement stmt2 = conn.prepareStatement("SELECT Email,Contrasenna FROM Monitor WHERE Email=(?) AND Contrasenna=(?)");
-        stmt.setString(1,email);
-        stmt.setString(2,password);
         try{
-            connect();
-            ResultSet rs = stmt2.executeQuery();
+            String consult = "SELECT \"Email\",\"Contrasenna\"FROM \"Monitor\" WHERE \"Email\"=? AND \"Contrasenna\" =?";
+            ps = conn.prepareStatement(consult);
+            ps.setString(1,email);
+            ps.setString(2,password);
+            rs = ps.executeQuery();
             if(rs.next()){ //IF USER EXISTS IN DATABASE
                 String user = rs.getString("Email");
                 String pass = rs.getString("Contrasenna");
@@ -182,12 +187,12 @@ public class Gym {
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
         };
-        PreparedStatement stmt3 = conn.prepareStatement("SELECT Email,Contrasenna FROM Limpiador WHERE Email=(?) AND Contrasenna=(?)");
-        stmt.setString(1,email);
-        stmt.setString(2,password);
         try{
-            connect();
-            ResultSet rs = stmt3.executeQuery();
+            String consult = "SELECT \"Email\",\"Contrasenna\"FROM \"Limpiador\" WHERE \"Email\"=? AND \"Contrasenna\" =?";
+            ps = conn.prepareStatement(consult);
+            ps.setString(1,email);
+            ps.setString(2,password);
+            rs = ps.executeQuery();
             if(rs.next()){ //IF USER EXISTS IN DATABASE
                 String user = rs.getString("Email");
                 String pass = rs.getString("Contrasenna");

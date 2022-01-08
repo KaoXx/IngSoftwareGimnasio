@@ -398,10 +398,10 @@ public class VentanaLogin extends javax.swing.JFrame {
     private void botonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIniciarSesionActionPerformed
         try {
             int inicioSesion = gym.SignIn(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
-            
             switch (inicioSesion){
                 case 0:
                     VentanaSocio ventanaSocio = new VentanaSocio();
+                    ventanaSocio.setVisible(true);
                     this.dispose();
                     break;
                 case 1:
@@ -409,6 +409,7 @@ public class VentanaLogin extends javax.swing.JFrame {
                 case 2:
                     break;
                 case 3:
+                    System.out.println("PAYASO");
                     break;
                 case -1: //No cuadran los credenciales
                     imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));
