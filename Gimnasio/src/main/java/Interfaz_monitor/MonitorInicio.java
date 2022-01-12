@@ -4,6 +4,8 @@
  */
 package Interfaz_monitor;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Miki
@@ -27,25 +29,34 @@ public class MonitorInicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        puntuacion = new javax.swing.JButton();
+        actividades = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));
 
-        jButton1.setText("Puntuación media");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        puntuacion.setIcon(new ImageIcon("src/main/java/imagenes/puntuacion_media_normal.png"));
+        puntuacion.setPressedIcon(new ImageIcon("src/main/java/imagenes/puntuacion_media_pequeno.png"));
+        puntuacion.setRolloverIcon(new ImageIcon("src/main/java/imagenes/puntuacion_media_grande.png"));
+        puntuacion.setBorderPainted(false);
+        puntuacion.setContentAreaFilled(false);
+        puntuacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                puntuacionActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Actividades");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        actividades.setIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_normal.png"));
+        actividades.setPressedIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_pequeno.png"));
+        actividades.setRolloverIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_grande.png"));
+        actividades.setBorderPainted(false);
+        actividades.setContentAreaFilled(false);
+        actividades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                actividadesActionPerformed(evt);
             }
         });
 
@@ -58,28 +69,26 @@ public class MonitorInicio extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(153, 153, 153)
-                        .addComponent(jButton2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(134, 134, 134)
-                        .addComponent(jButton1)))
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addGap(171, 171, 171)
+                .addComponent(jLabel1)
+                .addContainerGap(177, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(actividades, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                    .addComponent(puntuacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(83, 83, 83)
-                .addComponent(jButton1)
+                .addGap(35, 35, 35)
+                .addComponent(puntuacion, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addComponent(actividades, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -97,19 +106,19 @@ public class MonitorInicio extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void actividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actividadesActionPerformed
         // TODO add your handling code here:
         MonitorConsultarActividades moniAct = new MonitorConsultarActividades();
         moniAct.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_actividadesActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void puntuacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_puntuacionActionPerformed
         // TODO add your handling code here:
         MonitorPuntuacionMedia moniPunt = new MonitorPuntuacionMedia();
         moniPunt.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_puntuacionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,9 +156,9 @@ public class MonitorInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton actividades;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton puntuacion;
     // End of variables declaration//GEN-END:variables
 }

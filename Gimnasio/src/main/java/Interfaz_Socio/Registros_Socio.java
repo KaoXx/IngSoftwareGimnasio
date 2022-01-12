@@ -5,6 +5,8 @@
  */
 package Interfaz_Socio;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author alejandrobenitotrujillo
@@ -29,29 +31,46 @@ public class Registros_Socio extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        actividadesReservadas = new javax.swing.JButton();
+        actividadesRecientes = new javax.swing.JButton();
+        resumenSemanal = new javax.swing.JButton();
+        botonVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(33, 45, 62));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("MIS REGISTROS");
 
-        jButton1.setText("MIS ACTIVIDADES RESERVADAS");
+        actividadesReservadas.setIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_reservadas_normal.png"));
+        actividadesReservadas.setPressedIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_reservadas_pequeno.png"));
+        actividadesReservadas.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_reservadas_grande.png"));
+        actividadesReservadas.setBorderPainted(false);
+        actividadesReservadas.setContentAreaFilled(false);
 
-        jButton2.setText("ACTIVIDADES RECIENTES");
+        actividadesRecientes.setIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_normal.png"));
+        actividadesRecientes.setPressedIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_pequeno.png"));
+        actividadesRecientes.setRolloverIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_grande.png"));
+        actividadesRecientes.setBorderPainted(false);
+        actividadesRecientes.setContentAreaFilled(false);
 
-        jButton3.setText("MI RESUMEN SEMANAL");
+        resumenSemanal.setIcon(new ImageIcon("src/main/java/imagenes/mi_resumen_semanal_normal.png"));
+        resumenSemanal.setPressedIcon(new ImageIcon("src/main/java/imagenes/mi_resumen_semanal_pequeno.png"));
+        resumenSemanal.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mi_resumen_semanal_grande.png"));
+        resumenSemanal.setBorderPainted(false);
+        resumenSemanal.setContentAreaFilled(false);
 
-        jButton4.setText("Volver");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        botonVolver.setIcon(new ImageIcon("src/main/java/imagenes/volver.png"));
+        botonVolver.setPressedIcon(new ImageIcon("src/main/java/imagenes/volver_pequeno.png"));
+        botonVolver.setRolloverIcon(new ImageIcon("src/main/java/imagenes/volver_grande.png"));
+        botonVolver.setBorderPainted(false);
+        botonVolver.setContentAreaFilled(false);
+        botonVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                botonVolverActionPerformed(evt);
             }
         });
 
@@ -62,34 +81,33 @@ public class Registros_Socio extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(180, 180, 180)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton4))
+                        .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(62, 62, 62)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(resumenSemanal, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)))))
-                .addContainerGap(44, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(127, 127, 127))
+                                .addComponent(actividadesRecientes, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
+                                .addComponent(actividadesReservadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(26, 26, 26)
-                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(actividadesReservadas, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(actividadesRecientes, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(resumenSemanal, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
@@ -108,22 +126,22 @@ public class Registros_Socio extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
         // TODO add your handling code here:
         VentanaSocio sc = new VentanaSocio();
         sc.setVisible(true);
         this.setVisible(false);
         
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_botonVolverActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton actividadesRecientes;
+    private javax.swing.JButton actividadesReservadas;
+    private javax.swing.JButton botonVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton resumenSemanal;
     // End of variables declaration//GEN-END:variables
 }

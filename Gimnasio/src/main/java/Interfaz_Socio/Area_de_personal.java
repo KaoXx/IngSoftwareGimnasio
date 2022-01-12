@@ -5,6 +5,8 @@
  */
 package Interfaz_Socio;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author alejandrobenitotrujillo
@@ -28,23 +30,38 @@ public class Area_de_personal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        botonValorar = new javax.swing.JButton();
+        solciitarEntrenador = new javax.swing.JButton();
+        botonVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(33, 45, 62));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));
 
-        jButton1.setText("VALORAR A UN MONITOR");
+        botonValorar.setIcon(new ImageIcon("src/main/java/imagenes/valorar_a_un_monitor_normal.png"));
+        botonValorar.setPressedIcon(new ImageIcon("src/main/java/imagenes/valorar_a_un_monitor_pequeno.png"));
+        botonValorar.setRolloverIcon(new ImageIcon("src/main/java/imagenes/valorar_a_un_monitor_grande.png"));
+        botonValorar.setForeground(new java.awt.Color(255, 255, 255));
+        botonValorar.setBorderPainted(false);
+        botonValorar.setContentAreaFilled(false);
 
-        jButton2.setText("SOLICITAR ENTRENADOR PERSONAL");
+        solciitarEntrenador.setIcon(new ImageIcon("src/main/java/imagenes/solicitar_entrenador_normal.png"));
+        solciitarEntrenador.setPressedIcon(new ImageIcon("src/main/java/imagenes/solicitar_entrenador_peque.png"));
+        solciitarEntrenador.setRolloverIcon(new ImageIcon("src/main/java/imagenes/solicitar_entrenador_grande.png"));
+        solciitarEntrenador.setBorderPainted(false);
+        solciitarEntrenador.setContentAreaFilled(false);
 
-        jButton3.setText("Volver");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        botonVolver.setIcon(new ImageIcon("src/main/java/imagenes/volver.png"));
+        botonVolver.setPressedIcon(new ImageIcon("src/main/java/imagenes/volver_pequeno.png"));
+        botonVolver.setRolloverIcon(new ImageIcon("src/main/java/imagenes/volver_grande.png"));
+        botonVolver.setForeground(new java.awt.Color(255, 255, 255));
+        botonVolver.setBorderPainted(false);
+        botonVolver.setContentAreaFilled(false);
+        botonVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                botonVolverActionPerformed(evt);
             }
         });
 
@@ -52,27 +69,27 @@ public class Area_de_personal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton3)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(55, 55, 55))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(374, 374, 374))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(solciitarEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonValorar, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
                 .addGap(37, 37, 37)
-                .addComponent(jButton3)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addComponent(botonValorar, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(solciitarEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(botonVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -90,18 +107,18 @@ public class Area_de_personal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void botonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonVolverActionPerformed
         // TODO add your handling code here:
         VentanaSocio sc = new VentanaSocio();
         sc.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_botonVolverActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton botonValorar;
+    private javax.swing.JButton botonVolver;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton solciitarEntrenador;
     // End of variables declaration//GEN-END:variables
 }

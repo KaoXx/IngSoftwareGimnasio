@@ -6,6 +6,7 @@
 package Interfaz_Socio;
 
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 
 /**
@@ -32,97 +33,101 @@ public class VentanaSocio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        opcionesCuota = new javax.swing.JButton();
+        misActividades = new javax.swing.JButton();
+        misRegistros = new javax.swing.JButton();
+        areaPersonal = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 0, 204));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusable(false);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));
 
-        jButton1.setText("OPCIONES DE CUOTA");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        opcionesCuota.setIcon(new ImageIcon("src/main/java/imagenes/opciones_de_cuota_normal.png"));
+        opcionesCuota.setPressedIcon(new ImageIcon("src/main/java/imagenes/opciones_de_cuota_pequeno.png"));
+        opcionesCuota.setRolloverIcon(new ImageIcon("src/main/java/imagenes/opciones_de_cuota_grande.png"));
+        opcionesCuota.setBorderPainted(false);
+        opcionesCuota.setContentAreaFilled(false);
+        opcionesCuota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                opcionesCuotaActionPerformed(evt);
             }
         });
 
-        jButton2.setText("MIS ACTIVIDADES");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        misActividades.setIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_normal.png"));
+        misActividades.setPressedIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_peque.png"));
+        misActividades.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_grande.png"));
+        misActividades.setBorderPainted(false);
+        misActividades.setContentAreaFilled(false);
+        misActividades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                misActividadesActionPerformed(evt);
             }
         });
 
-        jButton4.setText("MIS REGISTROS");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        misRegistros.setIcon(new ImageIcon("src/main/java/imagenes/mis_registros_normal.png"));
+        misRegistros.setPressedIcon(new ImageIcon("src/main/java/imagenes/mis_registros_pequeno.png"));
+        misRegistros.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mis_registros_grande.png"));
+        misRegistros.setBorderPainted(false);
+        misRegistros.setContentAreaFilled(false);
+        misRegistros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                misRegistrosActionPerformed(evt);
             }
         });
 
-        jButton3.setText("ÁREA DE PERSONAL ");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        areaPersonal.setIcon(new ImageIcon("src/main/java/imagenes/area_de_personal_normal.png"));
+        areaPersonal.setPressedIcon(new ImageIcon("src/main/java/imagenes/area_de_personal_peque.png"));
+        areaPersonal.setRolloverIcon(new ImageIcon("src/main/java/imagenes/area_de_personal_grande.png"));
+        areaPersonal.setBorderPainted(false);
+        areaPersonal.setContentAreaFilled(false);
+        areaPersonal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                areaPersonalActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Seleccione la acción que desea realizar");
-
-        jButton5.setText("VOLVER");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton5)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(91, 91, 91)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(107, Short.MAX_VALUE))
+                        .addGap(3, 3, 3)
+                        .addComponent(areaPersonal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(misActividades, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(opcionesCuota, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(misRegistros, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 105, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(jButton5)
-                .addContainerGap())
+                .addComponent(opcionesCuota, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(13, 13, 13)
+                .addComponent(misActividades, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(misRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(areaPersonal, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -144,38 +149,34 @@ public class VentanaSocio extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void opcionesCuotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcionesCuotaActionPerformed
         // TODO add your handling code here:
         Opciones_cuota oc = new Opciones_cuota();
         oc.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_opcionesCuotaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void misActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_misActividadesActionPerformed
         // TODO add your handling code here:
         Mis_Actividades ma = new Mis_Actividades();
         ma.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_misActividadesActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void areaPersonalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areaPersonalActionPerformed
         // TODO add your handling code here:
         Area_de_personal ap = new Area_de_personal();
         ap.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_areaPersonalActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void misRegistrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_misRegistrosActionPerformed
         // TODO add your handling code here:
         Registros_Socio rs = new Registros_Socio();
         rs.setVisible(true);
         this.setVisible(false);
         
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_misRegistrosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,13 +221,12 @@ public class VentanaSocio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton areaPersonal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton misActividades;
+    private javax.swing.JButton misRegistros;
+    private javax.swing.JButton opcionesCuota;
     // End of variables declaration//GEN-END:variables
 
     private void setColour(Color BLUE) {
