@@ -1,13 +1,19 @@
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Activity.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Employee.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Enums/GymAreas.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Gym.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Monitor.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Interfaz/VentanaLogin.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/utiles/Util_Interfaz.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Cleaner.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Main.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Member.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Receptionist.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/Code/Trainer.java
-/Users/alejandrobenitotrujillo/Documents/IngSoftwareGimnasio/Gimnasio/src/main/java/utiles/Excepcion.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Member.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Excepcion.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Trainer.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Monitor.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades_Aforolleno.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Employee.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Area_de_personal.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Cleaner.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Activity.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Main.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Gym.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades_Exito.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Opciones_cuota.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Socio.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Util_Interfaz.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Receptionist.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Enums\GymAreas.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Registros_Socio.java

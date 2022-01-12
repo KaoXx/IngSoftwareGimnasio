@@ -1,45 +1,53 @@
 package Code;
 
-import java.sql.Time;
-import java.util.Objects;
+import java.util.Date;
+import java.util.UUID;
 
 public class Activity {
-    char id;
-    char type;
-    Time schedule;
+    UUID id;
+    String type;
+    Date fecha;
     int capacity;
-    char room;
+    String room;
 
-    public Activity(char id, char type, Time schedule, int capacity, char room) {
+    public Activity(UUID id, String type, Date fecha, int capacity, String room) {
         this.id = id;
         this.type = type;
-        this.schedule = schedule;
+        this.fecha = fecha;
         this.capacity = capacity;
         this.room = room;
     }
 
-    public char getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(char id) {
-        this.id = id;
-    }
-
-    public char getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(char type) {
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public String getRoom() {
+        return room;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setType(String type) {
         this.type = type;
     }
 
-    public Time getSchedule() {
-        return schedule;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 
-    public void setSchedule(Time schedule) {
-        this.schedule = schedule;
+    public void setRoom(String room) {
+        this.room = room;
     }
 
     public int getCapacity() {
@@ -50,35 +58,4 @@ public class Activity {
         this.capacity = capacity;
     }
 
-    public char getRoom() {
-        return room;
-    }
-
-    public void setRoom(char room) {
-        this.room = room;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Activity)) return false;
-        Activity activities = (Activity) o;
-        return getId() == activities.getId() && getType() == activities.getType() && getCapacity() == activities.getCapacity() && getRoom() == activities.getRoom() && Objects.equals(getSchedule(), activities.getSchedule());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getType(), getSchedule(), getCapacity(), getRoom());
-    }
-
-    @Override
-    public String toString() {
-        return "Activity{" +
-                "id=" + id +
-                ", type=" + type +
-                ", schedule=" + schedule +
-                ", capacity=" + capacity +
-                ", room=" + room +
-                '}';
-    }
 }
