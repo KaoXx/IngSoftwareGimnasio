@@ -9,11 +9,9 @@ Interfaz_Socio\Opciones_cuota$2.class
 Code\Trainer.class
 Code\Member.class
 Interfaz_entrenador\Entrenador_inicio$2.class
-Interfaz_Socio\VentanaSocio$6.class
 Interfaz_monitor\MonitorPuntuacionMedia$2.class
 utiles\Util_Interfaz.class
 Code\Gym.class
-Interfaz_Socio\Mis_Actividades_Exito.class
 Interfaz\VentanaLogin$1.class
 Interfaz_Socio\Mis_Actividades$1.class
 Interfaz_Socio\VentanaSocio$2.class
@@ -35,7 +33,6 @@ Interfaz\VentanaLogin$7.class
 Code\Receptionist.class
 Interfaz_Socio\Mis_Actividades.class
 Interfaz\VentanaLogin.class
-Interfaz_entrenador\Entrenador_inicio$4.class
 Interfaz_entrenador\Entrenador_mensaje$1.class
 Interfaz_Socio\Area_de_personal.class
 Interfaz_Socio\VentanaSocio$4.class
@@ -59,6 +56,5 @@ utiles\ModeloTabla.class
 Interfaz_entrenador\Entrenador_inicio$3.class
 Interfaz_entrenador\Entrenador_mensaje$2.class
 Interfaz_monitor\MonitorPuntuacionMedia$1.class
-Interfaz_Socio\Mis_Actividades_Aforolleno.class
 Interfaz_Socio\VentanaSocio.class
 Interfaz\VentanaLogin$2.class

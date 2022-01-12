@@ -6,7 +6,7 @@ import java.util.UUID;
 public class Member {
     UUID uuid;
     int memberNumber;
-    String name,tlfNumber,email,bankNumber,feeType,password,TipoCuenta;
+    String name,tlfNumber,email,bankNumber,feeType,password, tipoCuenta;
     Trainer trainer;
     public Member(UUID uuid, int memberNumber, String name, String tlfNumber, String email, String bankNumber, String feeType, String password, String tipoCuenta, Trainer trainer) {
         this.uuid = uuid;
@@ -17,10 +17,14 @@ public class Member {
         this.bankNumber = bankNumber;
         this.feeType = feeType;
         this.password = password;
-        TipoCuenta = tipoCuenta;
-        this.trainer = trainer;
+        this.tipoCuenta=tipoCuenta;
+        this.trainer=trainer;
     }
 
+    public String getTipoCuenta() {
+        return tipoCuenta;
+    }
+    
     public UUID getUuid() {
         return uuid;
     }
@@ -85,22 +89,6 @@ public class Member {
         this.password = password;
     }
 
-    public String getTipoCuenta() {
-        return TipoCuenta;
-    }
-
-    public void setTipoCuenta(String tipoCuenta) {
-        TipoCuenta = tipoCuenta;
-    }
-
-    public Trainer getTrainer() {
-        return trainer;
-    }
-
-    public void setTrainer(Trainer trainer) {
-        this.trainer = trainer;
-    }
-
     @Override
     public String toString() {
         return "Member{" +
@@ -112,8 +100,6 @@ public class Member {
                 ", bankNumber='" + bankNumber + '\'' +
                 ", feeType='" + feeType + '\'' +
                 ", password='" + password + '\'' +
-                ", TipoCuenta='" + TipoCuenta + '\'' +
-                ", trainer=" + trainer +
                 '}';
     }
 }

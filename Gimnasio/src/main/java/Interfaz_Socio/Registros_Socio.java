@@ -51,6 +51,11 @@ public class Registros_Socio extends javax.swing.JFrame {
         actividadesReservadas.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_reservadas_grande.png"));
         actividadesReservadas.setBorderPainted(false);
         actividadesReservadas.setContentAreaFilled(false);
+        actividadesReservadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actividadesReservadasActionPerformed(evt);
+            }
+        });
 
         actividadesRecientes.setIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_normal.png"));
         actividadesRecientes.setPressedIcon(new ImageIcon("src/main/java/imagenes/actividades_recientes_pequeno.png"));
@@ -135,6 +140,12 @@ public class Registros_Socio extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_botonVolverActionPerformed
+
+    private void actividadesReservadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actividadesReservadasActionPerformed
+        MisActividades ventana = new MisActividades();
+        ventana.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_actividadesReservadasActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

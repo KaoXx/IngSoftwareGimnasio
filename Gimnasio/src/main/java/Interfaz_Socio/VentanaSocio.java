@@ -5,8 +5,11 @@
  */
 package Interfaz_Socio;
 
+import Code.Gym;
 import java.awt.Color;
+import java.sql.SQLException;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -20,7 +23,12 @@ public class VentanaSocio extends javax.swing.JFrame {
      */
     public VentanaSocio() {
         initComponents();
-        
+        try {
+            Gym.cargarActividades();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null,"Ha ocurrido un error con la carga de actividades colectivas","ERROR", JOptionPane.ERROR_MESSAGE);
+            System.out.println(ex.toString());
+        }
     }
 
     /**
@@ -59,9 +67,9 @@ public class VentanaSocio extends javax.swing.JFrame {
             }
         });
 
-        misActividades.setIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_normal.png"));
-        misActividades.setPressedIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_peque.png"));
-        misActividades.setRolloverIcon(new ImageIcon("src/main/java/imagenes/mis_actividades_grande.png"));
+        misActividades.setIcon(new ImageIcon("src/main/java/imagenes/actividades_normal.png"));
+        misActividades.setPressedIcon(new ImageIcon("src/main/java/imagenes/actividades_pequeno.png"));
+        misActividades.setRolloverIcon(new ImageIcon("src/main/java/imagenes/actividades_grande.png"));
         misActividades.setBorderPainted(false);
         misActividades.setContentAreaFilled(false);
         misActividades.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +165,7 @@ public class VentanaSocio extends javax.swing.JFrame {
 
     private void misActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_misActividadesActionPerformed
         // TODO add your handling code here:
-        Mis_Actividades ma = new Mis_Actividades();
+        Actividades ma = new Actividades();
         ma.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_misActividadesActionPerformed
@@ -176,48 +184,6 @@ public class VentanaSocio extends javax.swing.JFrame {
         this.setVisible(false);
         
     }//GEN-LAST:event_misRegistrosActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaSocio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaSocio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaSocio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaSocio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaSocio().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton areaPersonal;

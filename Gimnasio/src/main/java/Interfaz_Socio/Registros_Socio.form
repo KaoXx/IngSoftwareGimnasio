@@ -107,6 +107,9 @@
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actividadesReservadasActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="actividadesReservadas.setIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_reservadas_normal.png&quot;));&#xa;actividadesReservadas.setPressedIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_reservadas_pequeno.png&quot;));&#xa;actividadesReservadas.setRolloverIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_reservadas_grande.png&quot;));"/>
           </AuxValues>

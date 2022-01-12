@@ -117,7 +117,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="misActividadesActionPerformed"/>
           </Events>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="misActividades.setIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_normal.png&quot;));&#xa;misActividades.setPressedIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_peque.png&quot;));&#xa;misActividades.setRolloverIcon(new ImageIcon(&quot;src/main/java/imagenes/mis_actividades_grande.png&quot;));"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="misActividades.setIcon(new ImageIcon(&quot;src/main/java/imagenes/actividades_normal.png&quot;));&#xa;misActividades.setPressedIcon(new ImageIcon(&quot;src/main/java/imagenes/actividades_pequeno.png&quot;));&#xa;misActividades.setRolloverIcon(new ImageIcon(&quot;src/main/java/imagenes/actividades_grande.png&quot;));"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="misRegistros">

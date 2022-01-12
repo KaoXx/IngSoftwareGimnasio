@@ -1,21 +1,27 @@
 package Code;
 
-import java.util.Date;
 import java.util.UUID;
 
 public class Activity {
     UUID id;
     String type;
-    Date fecha;
+    String dias;
+    String horario;
     int capacity;
     String room;
 
-    public Activity(UUID id, String type, Date fecha, int capacity, String room) {
+    public Activity(UUID id, String type, String dias, String horario, int capacity, String room) {
         this.id = id;
         this.type = type;
-        this.fecha = fecha;
+        this.dias = dias;
+        this.horario = horario;
         this.capacity = capacity;
         this.room = room;
+    }
+
+    @Override
+    public String toString() {
+        return "Activity{" + "id=" + id + ", type=" + type + ", dias=" + dias + ", horario=" + horario + ", capacity=" + capacity + ", room=" + room + '}';
     }
 
     public UUID getId() {
@@ -26,8 +32,12 @@ public class Activity {
         return type;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public String getDias() {
+        return dias;
+    }
+
+    public String getHorario() {
+        return horario;
     }
 
     public String getRoom() {
@@ -40,10 +50,6 @@ public class Activity {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
     }
 
     public void setRoom(String room) {

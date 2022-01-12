@@ -14,12 +14,10 @@ import java.time.LocalTime;
 import java.util.UUID;
 
 public class VentanaLogin extends javax.swing.JFrame {
-    Gym gym;
     int contador = 20 ;
 
     public VentanaLogin() {
         initComponents();
-        gym = new Gym();
         scrollLaminaRegistrarse.setVisible(false);
     }
 
@@ -400,7 +398,7 @@ public class VentanaLogin extends javax.swing.JFrame {
 
     private void botonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIniciarSesionActionPerformed
         try {
-            int inicioSesion = gym.SignIn(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
+            int inicioSesion = Gym.SignIn(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
             switch (inicioSesion){
                 case 0:
                     VentanaSocio ventanaSocio = new VentanaSocio();
@@ -423,6 +421,7 @@ public class VentanaLogin extends javax.swing.JFrame {
 
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
+            System.out.println(ex.toString());
         }
     }//GEN-LAST:event_botonIniciarSesionActionPerformed
 
@@ -465,8 +464,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                 Member member = new Member(UUID.randomUUID(),contador+1,nombreCompleto,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Normal",null);
                 try {
                     //System.out.println(member.toString());
-                    gym.SignUp(member);//Se inserta en la base de datos
-                    gym.setLoggedUser(member);
+                    Gym.SignUp(member);//Se inserta en la base de datos
+                    Gym.setLoggedUser(member);
                     setContador(contador++);
                     VentanaSocio v = new VentanaSocio();
                     v.setVisible(true);
@@ -482,8 +481,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                 Member member1 = new Member(UUID.randomUUID(),contador+1,nombreCompleto1,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Estudiante",null);
                 try {
                     //System.out.println(member.toString());
-                    gym.SignUp(member1);//Se inserta en la base de datos
-                    gym.setLoggedUser(member1);
+                    Gym.SignUp(member1);//Se inserta en la base de datos
+                    Gym.setLoggedUser(member1);
                     setContador(contador++);
                     VentanaSocio v = new VentanaSocio();
                     v.setVisible(true);
@@ -497,8 +496,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                 Member member2 = new Member(UUID.randomUUID(),contador+1,nombreCompleto2,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Jubilado",null);
                 try {
                     //System.out.println(member.toString());
-                    gym.SignUp(member2);//Se inserta en la base de datos
-                    gym.setLoggedUser(member2);
+                    Gym.SignUp(member2);//Se inserta en la base de datos
+                    Gym.setLoggedUser(member2);
                     setContador(contador++);
                     VentanaSocio v = new VentanaSocio();
                     v.setVisible(true);
@@ -512,8 +511,8 @@ public class VentanaLogin extends javax.swing.JFrame {
                 Member member3 = new Member(UUID.randomUUID(),contador+1,nombreCompleto3,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Familia Numerosa",null);
                 try {
                     //System.out.println(member.toString());
-                    gym.SignUp(member3);//Se inserta en la base de datos
-                    gym.setLoggedUser(member3);
+                    Gym.SignUp(member3);//Se inserta en la base de datos
+                    Gym.setLoggedUser(member3);
                     setContador(contador++);
                     VentanaSocio v = new VentanaSocio();
                     v.setVisible(true);
