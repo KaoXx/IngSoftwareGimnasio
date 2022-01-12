@@ -4,13 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="LOG IN COMPLETO">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_3_1.xml" afterDir="false" />
+    <list default="true" id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="LOG IN FUNCIONAL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gimnasio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gimnasio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Code/Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Code/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Gym.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Gym.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +234,9 @@
       <workItem from="1641475326377" duration="11253000" />
       <workItem from="1641567042026" duration="8942000" />
       <workItem from="1641650819675" duration="2159000" />
-      <workItem from="1641675053939" duration="2731000" />
+      <workItem from="1641675053939" duration="2849000" />
+      <workItem from="1641833192063" duration="36000" />
+      <workItem from="1641986090968" duration="13543000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de las clases necesarias para el GYM">
       <created>1640795363524</created>
@@ -264,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641584404438</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="LOG IN FUNCIONAL">
+      <created>1641677918268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641677918268</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +344,8 @@
     <MESSAGE value="Añadir accion Sign In" />
     <MESSAGE value="Eliminacion de clase innecesaria" />
     <MESSAGE value="LOG IN COMPLETO" />
-    <option name="LAST_COMMIT_MESSAGE" value="LOG IN COMPLETO" />
+    <MESSAGE value="LOG IN FUNCIONAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="LOG IN FUNCIONAL" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

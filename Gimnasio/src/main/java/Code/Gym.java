@@ -5,12 +5,14 @@ import utiles.Excepcion;
 import javax.swing.*;
 import javax.swing.plaf.nimbus.State;
 import java.sql.*;
+import java.util.UUID;
 
 public class Gym {
     int id;
     Employee[] employees;
     Member[] members;
     Activity[] activities;
+    Member memberlogged;
     private static final String URL ="jdbc:postgresql://35.205.101.101:5432/Gimnasio";
     private static final String USER = "postgres";
     private static final String PASSWORD = "123";
@@ -110,7 +112,9 @@ public class Gym {
         stmt.setInt(9,1);
     }
     private void RegularMember(Member member, PreparedStatement stmt) throws SQLException {
-        stmt.setString(1,member.getUuid().toString());
+        UUID uuid = UUID.randomUUID();
+        member.setUuid(uuid);
+        stmt.setObject(1,uuid);
         stmt.setInt(2,member.getMemberNumber());
         stmt.setString(3,member.getName());
         stmt.setInt(4, Integer.parseInt(member.getTlfNumber()));
@@ -119,12 +123,21 @@ public class Gym {
         stmt.setString(7,member.getFeeType());
         stmt.setString(8,member.getBankNumber());
         stmt.setInt(9,1);
-        stmt.setString(10,null);
+        stmt.setObject(10,null);
+        stmt.setObject(11,null);
+        stmt.setString(12,member.getTipoCuenta());
+
     }
 
     public void SignUp(Member member) throws SQLException {
-        PreparedStatement stmt = conn.prepareStatement("INSERT INTO Socio VALUES (?,?,?,?,?,?,?,?,?,?)");
+        connect();
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO \"Socio\" VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
         RegularMember(member,stmt);
+        try{
+            stmt.execute();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /*
@@ -142,7 +155,6 @@ public class Gym {
             ps.setString(2,password);
             rs = ps.executeQuery();
             if(rs.next()){ //IF USER EXISTS IN DATABASE
-                System.out.println("lol");
                 String user = rs.getString("Email");
                 String pass = rs.getString("Contrasenna");
                 if(user.equals(email) && pass.equals(password)){
@@ -214,5 +226,10 @@ public class Gym {
         }
         return -1;
     }
+
+    public void setLoggedUser(Member member){
+        member = memberlogged;
+    }
+
 
 }

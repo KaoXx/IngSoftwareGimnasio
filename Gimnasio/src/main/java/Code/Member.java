@@ -6,26 +6,18 @@ import java.util.UUID;
 public class Member {
     UUID uuid;
     int memberNumber;
-    String name,tlfNumber,email,bankNumber,feeType,password;
+    String name,tlfNumber,email,bankNumber,feeType,password,TipoCuenta;
     Trainer trainer;
-
-    public Member(int memberNumber, String name, String tlfNumber, String  email,String password, String bankNumber, String feeType) {
-        uuid = UUID.randomUUID();
+    public Member(UUID uuid, int memberNumber, String name, String tlfNumber, String email, String bankNumber, String feeType, String password, String tipoCuenta, Trainer trainer) {
+        this.uuid = uuid;
         this.memberNumber = memberNumber;
         this.name = name;
         this.tlfNumber = tlfNumber;
         this.email = email;
-        this.password = password;
         this.bankNumber = bankNumber;
         this.feeType = feeType;
-        trainer = null;
-    }
-
-    public Trainer getTrainer() {
-        return trainer;
-    }
-
-    public void setTrainer(Trainer trainer) {
+        this.password = password;
+        TipoCuenta = tipoCuenta;
         this.trainer = trainer;
     }
 
@@ -93,6 +85,22 @@ public class Member {
         this.password = password;
     }
 
+    public String getTipoCuenta() {
+        return TipoCuenta;
+    }
+
+    public void setTipoCuenta(String tipoCuenta) {
+        TipoCuenta = tipoCuenta;
+    }
+
+    public Trainer getTrainer() {
+        return trainer;
+    }
+
+    public void setTrainer(Trainer trainer) {
+        this.trainer = trainer;
+    }
+
     @Override
     public String toString() {
         return "Member{" +
@@ -104,21 +112,8 @@ public class Member {
                 ", bankNumber='" + bankNumber + '\'' +
                 ", feeType='" + feeType + '\'' +
                 ", password='" + password + '\'' +
-                ", idtrainer=" + trainer.uid +
+                ", TipoCuenta='" + TipoCuenta + '\'' +
+                ", trainer=" + trainer +
                 '}';
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Member)) return false;
-        Member member = (Member) o;
-        return getMemberNumber() == member.getMemberNumber() && Objects.equals(getUuid(), member.getUuid()) && Objects.equals(getName(), member.getName()) && Objects.equals(getTlfNumber(), member.getTlfNumber()) && Objects.equals(getEmail(), member.getEmail()) && Objects.equals(getBankNumber(), member.getBankNumber()) && Objects.equals(getFeeType(), member.getFeeType()) && Objects.equals(getPassword(), member.getPassword());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getUuid(), getMemberNumber(), getName(), getTlfNumber(), getEmail(), getBankNumber(), getFeeType(), getPassword());
-    }
-
 }

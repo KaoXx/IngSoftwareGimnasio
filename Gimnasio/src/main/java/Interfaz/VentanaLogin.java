@@ -4,15 +4,18 @@ import Code.Gym;
 import Code.*;
 import javax.swing.*;
 
+import Interfaz_Socio.Area_de_personal;
 import Interfaz_Socio.VentanaSocio;
 import utiles.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.SQLException;
 import java.time.LocalTime;
+import java.util.UUID;
 
 public class VentanaLogin extends javax.swing.JFrame {
     Gym gym;
+    int contador = 20 ;
 
     public VentanaLogin() {
         initComponents();
@@ -417,33 +420,7 @@ public class VentanaLogin extends javax.swing.JFrame {
                     separadorContrasenna.setBackground(Color.red);
                     break;
             }
-            /*
-            int validarIniciarSesion = Gym.iniciarSesion(campoCorreo.getText(), arrayCharToString(campoContrasenna.getPassword()));
-            switch (validarIniciarSesion) {
-            case 0:
-            VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
-            this.dispose();
-            break;
-            case 1:
-            VentanaPrincipal ventanaPrincipalAdmin = new VentanaPrincipal(Administrador.ADMINISTRADOR);
-            this.dispose();
-            break;
-            case -1:
-            JOptionPane.showMessageDialog(this, "Contraseña incorrecta", "ERROR", JOptionPane.ERROR_MESSAGE);
-            imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/Arroba.png"));
-            separadorCorreo.setBackground(new Color(73, 181, 172));
-            imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/CandadoRojo.png"));
-            separadorContrasenna.setBackground(Color.red);
-            break;
-            default:
-            JOptionPane.showMessageDialog(this, "Correo electrónico incorrecto", "ERROR", JOptionPane.ERROR_MESSAGE);
-            imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));
-            separadorCorreo.setBackground(Color.red);
-            imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/Candado.png"));
-            separadorContrasenna.setBackground(new Color(73, 181, 172));
-            break;
-            }
-        */      
+
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null,"Ha ocurrido un error en la base de datos","ERROR",JOptionPane.ERROR_MESSAGE);
         }
@@ -482,53 +459,72 @@ public class VentanaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_campoCorreoKeyTyped
 
     private void botonRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistrarseActionPerformed
-        /*
         switch (desplegableTipoCliente.getSelectedIndex()){
-            case 0: //Member
-
-                Member member = new Member();
+            case 0: //Normal
+                String nombreCompleto = campoNombreUsuarioRegistro.getText()+' '+ campoNombreUsuarioRegistro1.getText();
+                Member member = new Member(UUID.randomUUID(),contador+1,nombreCompleto,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Normal",null);
                 try {
+                    //System.out.println(member.toString());
                     gym.SignUp(member);//Se inserta en la base de datos
-                    //Aplicacion.setUsuarioLogueado(usuarioNuevo);
-                    VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
+                    gym.setLoggedUser(member);
+                    setContador(contador++);
+                    VentanaSocio v = new VentanaSocio();
+                    v.setVisible(true);
                     this.dispose();
-                } catch (Excepcion | SQLException exception) {
-                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+                    break;
+
+                } catch (SQLException exception) {
+                    JOptionPane.showMessageDialog(this, "Error, " + exception.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
             
-            case 1: // Monitor
-                horarioAperturaClienteProfesional = VentanaHorario.getHorarioApertura();
-
-                //Ubicacion ubicacion = new Ubicacion(campoCiudad.getText(), campoCodigoPostal.getText());
-                //ClienteProfesional usuarioProfesionalNuevo = new ClienteProfesional(campoDescripcion.getText(), VentanaHorario.getHorarioApertura(), campoTelefono.getText(), campoWeb.getText(), campoNombreUsuarioRegistro.getText(), campoDNI.getText(), campoCorreoRegistro.getText(), campoContrasennaRegistro.getText(), campoTarjetaCredito.getText(), ubicacion);
+             case 1: //Estudiante
+                String nombreCompleto1 = campoNombreUsuarioRegistro.getText()+' ' +campoNombreUsuarioRegistro1.getText();
+                Member member1 = new Member(UUID.randomUUID(),contador+1,nombreCompleto1,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Estudiante",null);
                 try {
-                    //Aplicacion.registrarCliente(usuarioProfesionalNuevo);
-                    //Aplicacion.setUsuarioLogueado(usuarioProfesionalNuevo);
-                    VentanaPrincipal ventanaPrincipalCliente = new VentanaPrincipal(Usuario.USUARIO);
+                    //System.out.println(member.toString());
+                    gym.SignUp(member1);//Se inserta en la base de datos
+                    gym.setLoggedUser(member1);
+                    setContador(contador++);
+                    VentanaSocio v = new VentanaSocio();
+                    v.setVisible(true);
                     this.dispose();
-                } catch (Excepcion excepcion) {
-                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+                    break;
+                } catch (SQLException exception) {
+                    JOptionPane.showMessageDialog(this, "Error, " + exception.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
-            case 2: //Receptionist
-
-
-                try{
-
+            case 2: //Jubilado
+                String nombreCompleto2 = campoNombreUsuarioRegistro.getText()+' '+campoNombreUsuarioRegistro1.getText();
+                Member member2 = new Member(UUID.randomUUID(),contador+1,nombreCompleto2,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Jubilado",null);
+                try {
+                    //System.out.println(member.toString());
+                    gym.SignUp(member2);//Se inserta en la base de datos
+                    gym.setLoggedUser(member2);
+                    setContador(contador++);
+                    VentanaSocio v = new VentanaSocio();
+                    v.setVisible(true);
+                    this.dispose();
+                    break;
+                } catch (SQLException exception) {
+                    JOptionPane.showMessageDialog(this, "Error, " + exception.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
-                catch (Excepcion excepcion){
-                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+            case 3: //Familia Numerosa
+                String nombreCompleto3 = campoNombreUsuarioRegistro.getText()+' '+campoNombreUsuarioRegistro1.getText();
+                Member member3 = new Member(UUID.randomUUID(),contador+1,nombreCompleto3,campoNumeroTelefono.getText(),campoCorreoRegistro.getText(),campoIBAN.getText(),"Anual",campoContrasennaRegistro.getText(),"Familia Numerosa",null);
+                try {
+                    //System.out.println(member.toString());
+                    gym.SignUp(member3);//Se inserta en la base de datos
+                    gym.setLoggedUser(member3);
+                    setContador(contador++);
+                    VentanaSocio v = new VentanaSocio();
+                    v.setVisible(true);
+                    this.dispose();
+                    break;
+                } catch (SQLException exception) {
+                    JOptionPane.showMessageDialog(this, "Error, " + exception.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
                 }
-            case 3: //Trainer
-                try{
-
-                }
-                catch (Excepcion excepcion){
-                    JOptionPane.showMessageDialog(this, "Error, " + ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
-                }
-
-
         }
-        */
+
+
     }//GEN-LAST:event_botonRegistrarseActionPerformed
 
     private void reiniciarCamposLogin() {
@@ -538,6 +534,10 @@ public class VentanaLogin extends javax.swing.JFrame {
         imagenCandado.setIcon(new ImageIcon("src/main/java/imagenes/Candado.png"));
         separadorCorreo.setBackground(new Color(73, 181, 172));
         separadorContrasenna.setBackground(new Color(73, 181, 172));
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
     }
 
     public static void main(String args[]) {
