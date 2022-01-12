@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="LOG IN FUNCIONAL">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Code/Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Code/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Code/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Interfaz/VentanaLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Activity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Activity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Gym.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Gym.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Code/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Code/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Area_de_personal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Mis_Actividades.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Opciones_cuota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_Socio/Registros_Socio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_inicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Entrenador_mensaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_entrenador/Socios_asignados.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorConsultarActividades.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorInicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Interfaz_monitor/MonitorPuntuacionMedia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="22s32mGm8V01cH8XtX2QouThrMn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/postgresql-42.3.1.jar" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="aws" />
+  </component>
+  <component name="RunManager" selected="Application.VentanaLogin">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Code.Main" />
+      <module name="Gimnasio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Gimnasio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Socio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interfaz_Socio.Socio" />
+      <module name="Gimnasio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interfaz_Socio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VentanaLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interfaz.VentanaLogin" />
+      <module name="Gimnasio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interfaz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VentanaLogin" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Programas/Java/JDK" />
+      <option name="MAIN_CLASS_NAME" value="Interfaz.VentanaLogin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interfaz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Gimnasio" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.VentanaLogin" />
+      <item itemvalue="Application.Socio" />
+      <item itemvalue="Maven.Gimnasio" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VentanaLogin" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Socio" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cfdcb34-e6dd-4f5f-be82-21a5c90b8732" name="Changes" comment="" />
+      <created>1640612266837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640612266837</updated>
+      <workItem from="1640612269456" duration="67000" />
+      <workItem from="1640612381350" duration="50000" />
+      <workItem from="1640789607616" duration="2681000" />
+      <workItem from="1640792329227" duration="3121000" />
+      <workItem from="1641299324566" duration="101000" />
+      <workItem from="1641333492439" duration="385000" />
+      <workItem from="1641334003330" duration="1272000" />
+      <workItem from="1641335307495" duration="726000" />
+      <workItem from="1641336298660" duration="175000" />
+      <workItem from="1641336490874" duration="58000" />
+      <workItem from="1641336576097" duration="3150000" />
+      <workItem from="1641339773062" duration="424000" />
+      <workItem from="1641340218200" duration="330000" />
+      <workItem from="1641340565826" duration="45000" />
+      <workItem from="1641340631214" duration="582000" />
+      <workItem from="1641341237798" duration="2573000" />
+      <workItem from="1641388349770" duration="5320000" />
+      <workItem from="1641426335777" duration="936000" />
+      <workItem from="1641432474295" duration="1103000" />
+      <workItem from="1641473708822" duration="1551000" />
+      <workItem from="1641475326377" duration="11253000" />
+      <workItem from="1641567042026" duration="8942000" />
+      <workItem from="1641650819675" duration="2159000" />
+      <workItem from="1641675053939" duration="2849000" />
+      <workItem from="1641833192063" duration="36000" />
+      <workItem from="1641986090968" duration="13543000" />
+    </task>
+    <task id="LOCAL-00001" summary="Creacion de las clases necesarias para el GYM">
+      <created>1640795363524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640795363524</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Google Cloud SQL Postgres Connection">
+      <created>1641474477392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641474477392</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Google Cloud SQL Postgres Connection">
+      <created>1641474684964</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641474684964</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Añadir accion SignUp">
+      <created>1641488085011</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641488085011</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Añadir accion SignUp">
+      <created>1641488310519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641488310519</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Añadir accion Sign In">
+      <created>1641582072011</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641582072011</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Eliminacion de clase innecesaria">
+      <created>1641582171770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641582171770</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Eliminacion de clase innecesaria">
+      <created>1641582613004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641582613004</updated>
+    </task>
+    <task id="LOCAL-00009" summary="LOG IN COMPLETO">
+      <created>1641584404438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641584404438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="LOG IN FUNCIONAL">
+      <created>1641677918268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641677918268</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="LogIn" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creacion de las clases necesarias para el GYM" />
+    <MESSAGE value="Google Cloud SQL Postgres Connection" />
+    <MESSAGE value="Añadir accion SignUp" />
+    <MESSAGE value="Añadir accion Sign In" />
+    <MESSAGE value="Eliminacion de clase innecesaria" />
+    <MESSAGE value="LOG IN COMPLETO" />
+    <MESSAGE value="LOG IN FUNCIONAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="LOG IN FUNCIONAL" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
