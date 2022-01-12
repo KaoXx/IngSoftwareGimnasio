@@ -35,6 +35,7 @@ public class Socios_asignados extends javax.swing.JFrame {
         jList1 = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(new ImageIcon("src/main/java/imagenes/logo.png").getImage());
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));

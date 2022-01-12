@@ -37,6 +37,7 @@ public class Entrenador_mensaje extends javax.swing.JFrame {
         enviar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(new ImageIcon("src/main/java/imagenes/logo.png").getImage());
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(33, 45, 62));
