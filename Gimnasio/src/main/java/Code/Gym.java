@@ -68,6 +68,10 @@ public class Gym {
             conn.close();
         }
     }
+    
+    public void cargarActividades() throws SQLException{
+        
+    }
 
     public void SignUp(Employee employee) throws SQLException {
         connect();

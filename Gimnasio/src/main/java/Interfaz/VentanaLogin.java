@@ -409,7 +409,6 @@ public class VentanaLogin extends javax.swing.JFrame {
                 case 2:
                     break;
                 case 3:
-                    System.out.println("PAYASO");
                     break;
                 case -1: //No cuadran los credenciales
                     imagenArroba.setIcon(new ImageIcon("src/main/java/imagenes/ArrobaRojo.png"));

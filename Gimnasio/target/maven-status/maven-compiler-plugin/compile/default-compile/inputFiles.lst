@@ -1,30 +1,27 @@
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Member.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Excepcion.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Trainer.java
-<<<<<<< HEAD
-=======
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz\VentanaLogin.java
->>>>>>> Interfaz_Entrenador
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Monitor.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_monitor\MonitorInicio.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades_Aforolleno.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Employee.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_entrenador\Socios_asignados.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Area_de_personal.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Cleaner.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_monitor\MonitorPuntuacionMedia.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Activity.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Main.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Gym.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Mis_Actividades_Exito.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Opciones_cuota.java
-<<<<<<< HEAD
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Socio.java
-=======
->>>>>>> Interfaz_Entrenador
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Util_Interfaz.java
-D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Receptionist.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Enums\GymAreas.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Registros_Socio.java
-<<<<<<< HEAD
-=======
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Excepcion.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Trainer.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz\VentanaLogin.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Monitor.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Employee.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Cleaner.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_entrenador\Entrenador_inicio.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Gym.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\Opciones_cuota.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_monitor\MonitorConsultarActividades.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\Util_Interfaz.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Code\Receptionist.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_entrenador\Entrenador_mensaje.java
+D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\utiles\ModeloTabla.java
 D:\Program Files\OneDrive\SoftwareGimnasio\IngSoftwareGimnasio\Gimnasio\src\main\java\Interfaz_Socio\VentanaSocio.java
->>>>>>> Interfaz_Entrenador
