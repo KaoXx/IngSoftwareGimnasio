@@ -1,13 +1,23 @@
 Interfaz_Socio\Mis_Actividades$2.class
 Interfaz_Socio\Opciones_cuota.class
+<<<<<<< HEAD
 Code\Receptionist.class
 Interfaz_Socio\Socio$4.class
 Interfaz_Socio\Mis_Actividades.class
+=======
+Interfaz\VentanaLogin$7.class
+Code\Receptionist.class
+Interfaz_Socio\VentanaSocio$3.class
+Interfaz\VentanaLogin$5.class
+Interfaz_Socio\Mis_Actividades.class
+Interfaz\VentanaLogin.class
+>>>>>>> Interfaz_Entrenador
 Code\Monitor.class
 Interfaz_Socio\Opciones_cuota$2.class
 Code\Trainer.class
 Code\Member.class
 Interfaz_Socio\Area_de_personal.class
+<<<<<<< HEAD
 Interfaz_Socio\Socio$2.class
 Interfaz_Socio\Socio.class
 Code\Cleaner.class
@@ -24,10 +34,40 @@ Code\Employee.class
 Interfaz_Socio\Opciones_cuota$1.class
 Interfaz_Socio\Socio$3.class
 Code\Main.class
+=======
+Interfaz_Socio\VentanaSocio$4.class
+Interfaz\VentanaLogin$3.class
+Code\Cleaner.class
+Interfaz_Socio\VentanaSocio$6.class
+Interfaz_Socio\Registros_Socio.class
+Interfaz_Socio\VentanaSocio$1.class
+utiles\Util_Interfaz.class
+Code\Gym.class
+Interfaz\VentanaLogin$6.class
+Interfaz_Socio\Mis_Actividades_Exito.class
+Interfaz_Socio\Registros_Socio$1.class
+Code\Activity.class
+Interfaz\VentanaLogin$1.class
+Interfaz_Socio\Mis_Actividades$1.class
+Interfaz_Socio\VentanaSocio$2.class
+Interfaz_Socio\Mis_Actividades$3.class
+Code\Employee.class
+Interfaz_Socio\Opciones_cuota$1.class
+Interfaz\VentanaLogin$8.class
+Code\Main.class
+Interfaz\VentanaLogin$4.class
+>>>>>>> Interfaz_Entrenador
 Enums\GymAreas.class
 Interfaz_Socio\Area_de_personal$1.class
 Interfaz_Socio\Opciones_cuota$3.class
 utiles\Excepcion.class
+<<<<<<< HEAD
 Interfaz_Socio\Mis_Actividades_Aforolleno.class
 Interfaz_Socio\Socio$6.class
 Interfaz_Socio\Socio$1.class
+=======
+Interfaz_Socio\VentanaSocio$5.class
+Interfaz_Socio\Mis_Actividades_Aforolleno.class
+Interfaz_Socio\VentanaSocio.class
+Interfaz\VentanaLogin$2.class
+>>>>>>> Interfaz_Entrenador
